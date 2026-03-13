@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://quge5.com/88/tag.min.js" data-zone="218841" async data-cfasync="false"></script>
+<script src="https://5gvci.com/act/files/tag.min.js?z=10716673" data-cfasync="false" async></script>
+<meta name="monetag" content="dcbdda42dcc7188df660783ec0943db3">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learn Python in 24 Hours — Free Course | AILearn</title>
+<meta name="description" content="Learn Python programming in 24 hours with our free, self-paced course. 24 lessons, 6 modules, quizzes, certificate. No sign-up needed. Start right now.">
+<meta property="og:title" content="Learn Python in 24 Hours — Free Course">
+<meta property="og:description" content="Go from zero to coding real Python programs in just 24 hours. 100% free, no sign-up, certificate included.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+3:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#EA580C;
+  --orange-light:#FFF7ED;
+  --orange-mid:#FED7AA;
+  --orange-dark:#C2410C;
+  --orange-bright:#F97316;
+  --navy:#0F172A;
+  --ink:#1A1A2E;
+  --ink2:#374151;
+  --gray:#6B7280;
+  --gray-light:#F3F4F6;
+  --white:#FFFFFF;
+  --border:#E5E7EB;
+  --green:#16A34A;
+  --green-light:#DCFCE7;
+  --blue:#2563EB;
+  --yellow:#EAB308;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 4px 6px rgba(0,0,0,.07),0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg:0 10px 24px rgba(0,0,0,.1),0 4px 8px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3','Segoe UI',sans-serif;background:#F8F7F4;color:var(--ink);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Merriweather',Georgia,serif;line-height:1.25;letter-spacing:-.02em}
+a{color:var(--orange);text-decoration:none}
+code,pre,.mono{font-family:'JetBrains Mono',monospace}
+
+/* ── TICKER ── */
+.ticker{background:var(--navy);color:#fff;padding:.4rem 0;overflow:hidden;font-size:.78rem;font-weight:700;letter-spacing:.03em;font-family:'Source Sans 3',sans-serif}
+.ticker-inner{display:flex;animation:ticker 40s linear infinite;white-space:nowrap;gap:0}
+.ticker-inner span{padding:0 2rem;opacity:.8}
+.ticker-inner span strong{color:#FB923C;opacity:1}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── NAV ── */
+nav{background:var(--white);border-bottom:3px solid var(--orange);position:sticky;top:0;z-index:900;box-shadow:var(--shadow-md)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{font-family:'Merriweather',serif;font-size:1.3rem;font-weight:900;color:#111827;display:flex;align-items:center;gap:.5rem;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.nav-logo .logo-py{background:#EA580C;color:#fff;padding:.1rem .45rem;border-radius:5px;font-size:1.1rem;flex-shrink:0}
+.nav-logo .logo-learn{color:#EA580C}
+.nav-links{display:flex;align-items:center;gap:1.5rem}
+.nav-links a{font-size:.82rem;font-weight:700;color:var(--ink2);transition:color .15s;font-family:'Source Sans 3',sans-serif}
+.nav-links a:hover{color:var(--orange)}
+.nav-cta{background:var(--orange);color:#fff;border:none;padding:.45rem 1.1rem;border-radius:6px;font-size:.82rem;font-weight:700;cursor:pointer;transition:background .15s;font-family:'Source Sans 3',sans-serif}
+.nav-cta:hover{background:var(--orange-dark)}
+.nav-progress{height:3px;background:var(--orange-light);position:absolute;bottom:-3px;left:0;right:0}
+.np-fill{height:100%;background:var(--orange);border-radius:99px;width:0%;transition:width .4s}
+
+/* ── HERO ── */
+.hero{background:var(--navy);position:relative;overflow:hidden;padding:4rem 1.5rem 3.5rem}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(234,88,12,.18) 0%,transparent 70%)}
+.hero-snake{position:absolute;right:-40px;top:50%;transform:translateY(-50%);font-size:12rem;opacity:.06;pointer-events:none;user-select:none}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-right{display:none}}
+.hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(234,88,12,.15);border:1px solid rgba(234,88,12,.3);color:#FB923C;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:.3rem .75rem;border-radius:99px;margin-bottom:.9rem;font-family:'Source Sans 3',sans-serif}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:.75rem;line-height:1.15}
+.hero h1 span{color:#FB923C}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.65);max-width:520px;line-height:1.7;margin-bottom:1.5rem;font-family:'Source Sans 3',sans-serif}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.hero-pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.7);font-size:.75rem;font-weight:700;padding:.25rem .7rem;border-radius:99px;font-family:'Source Sans 3',sans-serif}
+.hero-social{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem}
+.avatar-stack{display:flex}
+.avatar-stack span{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#FCD34D);border:2px solid var(--navy);margin-left:-8px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:900;color:#fff;flex-shrink:0}
+.avatar-stack span:first-child{margin-left:0}
+.social-text{font-size:.8rem;color:rgba(255,255,255,.55);font-family:'Source Sans 3',sans-serif}
+.social-text strong{color:#fff}
+.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn-primary{background:var(--orange);color:#fff;border:none;padding:.85rem 2rem;border-radius:8px;font-size:1rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif;box-shadow:0 4px 18px rgba(234,88,12,.35);transition:all .2s}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px);box-shadow:0 8px 24px rgba(234,88,12,.45)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);padding:.85rem 1.5rem;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:all .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.05)}
+/* hero code card */
+.hero-right{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.25rem;min-width:300px;max-width:340px}
+.code-titlebar{display:flex;align-items:center;gap:.4rem;margin-bottom:.85rem}
+.code-dot{width:10px;height:10px;border-radius:50%}
+.code-filename{font-size:.72rem;color:rgba(255,255,255,.4);font-family:'JetBrains Mono',monospace;margin-left:.3rem}
+.code-block{font-family:'JetBrains Mono',monospace;font-size:.75rem;line-height:1.7;color:#E2E8F0}
+.code-block .kw{color:#FB923C}
+.code-block .fn{color:#38BDF8}
+.code-block .str{color:#86EFAC}
+.code-block .cm{color:#64748B}
+.code-block .num{color:#F9A8D4}
+.code-output{margin-top:.85rem;border-top:1px solid rgba(255,255,255,.08);padding-top:.85rem;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#86EFAC}
+.code-output::before{content:'▶  Output  ';color:rgba(255,255,255,.3)}
+
+/* ── STAT STRIP ── */
+.stat-strip{background:var(--orange);padding:1rem 1.5rem}
+.stat-strip-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:.5rem}
+.ss-item{text-align:center}
+.ss-val{font-family:'Merriweather',serif;font-size:1.5rem;font-weight:900;color:#fff;display:block}
+.ss-lbl{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.06em;font-family:'Source Sans 3',sans-serif}
+
+/* ── WRAP / LAYOUT ── */
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.section{padding:3rem 0}
+.sec-eyebrow{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:.5rem;font-family:'Source Sans 3',sans-serif}
+.sec-title{font-family:'Merriweather',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:900;color:var(--ink);margin-bottom:.6rem}
+.sec-sub{font-size:.95rem;color:var(--gray);max-width:620px;line-height:1.7;font-family:'Source Sans 3',sans-serif;margin-bottom:1.5rem}
+.ad-wrap{background:var(--gray-light);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:.75rem;text-align:center}
+.ad-slot{display:inline-flex;align-items:center;justify-content:center;background:var(--white);border:1px dashed var(--border);border-radius:6px;min-height:90px;padding:.5rem 1rem;font-size:.7rem;color:var(--gray);font-family:'JetBrains Mono',monospace}
+.ad-728{width:100%;max-width:728px}
+
+/* ── SKILLS GRID ── */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.85rem}
+.skill-card{background:var(--white);border:1px solid var(--border);border-radius:11px;padding:1.1rem;box-shadow:var(--shadow-sm);transition:all .2s;border-top:3px solid var(--orange)}
+.skill-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.sc-icon{font-size:1.5rem;margin-bottom:.5rem}
+.sc-title{font-family:'Merriweather',serif;font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
+.sc-desc{font-size:.77rem;color:var(--gray);line-height:1.55;font-family:'Source Sans 3',sans-serif}
+
+/* ── MAIN LAYOUT ── */
+.main-layout{display:grid;grid-template-columns:1fr 300px;gap:2rem;align-items:start}
+@media(max-width:900px){.main-layout{grid-template-columns:1fr}.sidebar{display:none}}
+
+/* ── MODULES ── */
+.module-list{display:flex;flex-direction:column;gap:1rem}
+.module-card{background:#ffffff !important;border:2px solid #D1D5DB;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.mc-header{padding:1rem 1.25rem;display:flex;align-items:center;gap:.85rem;cursor:pointer;user-select:none;transition:background .15s;min-height:70px;background:#ffffff}
+.mc-header:hover{background:#FFF3E0}
+.mc-icon-wrap{width:44px;height:44px;border-radius:10px;background:#FED7AA;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;line-height:1}
+.mc-meta{flex:1;min-width:0}
+.mc-title{font-family:'Merriweather',serif;font-size:1rem;font-weight:900;color:#000000 !important;margin-bottom:.2rem;display:block}
+.mc-sub{font-size:.78rem;color:#374151 !important;font-family:'Source Sans 3',sans-serif;display:block;font-weight:600}
+.mc-toggle{font-size:.75rem;color:#EA580C;font-weight:800;font-family:'Source Sans 3',sans-serif;white-space:nowrap}
+.mc-lessons{border-top:1px solid var(--border);display:none}
+.mc-lessons.open{display:block}
+.lesson-row{display:flex;align-items:center;gap:.75rem;padding:.75rem 1.25rem;border-bottom:1px solid #E5E7EB;cursor:pointer;transition:background .15s;background:#fff}
+.lesson-row:last-child{border-bottom:none}
+.lesson-row:hover{background:#FFF7ED}
+.lr-num{width:28px;height:28px;border-radius:50%;background:#E5E7EB;border:1.5px solid #D1D5DB;display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800;color:#374151;flex-shrink:0;font-family:'Source Sans 3',sans-serif}
+.lesson-row.done .lr-num{background:#DCFCE7;border-color:#16A34A;color:#15803D}
+.lr-title{flex:1;font-size:.88rem;font-weight:700;color:#111827;font-family:'Source Sans 3',sans-serif}
+.lr-dur{font-size:.74rem;color:#6B7280;font-family:'Source Sans 3',sans-serif;font-weight:600}
+.lr-tag{font-size:.65rem;font-weight:800;background:#FED7AA;color:#9A3412;padding:.15rem .5rem;border-radius:99px;font-family:'Source Sans 3',sans-serif}
+
+/* ── SIDEBAR ── */
+.sidebar{display:flex;flex-direction:column;gap:1rem;position:sticky;top:80px}
+.side-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow-sm)}
+.side-title{font-family:'Merriweather',serif;font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.progress-ring-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:.75rem}
+.side-links{display:flex;flex-direction:column;gap:.35rem}
+.side-link{font-size:.8rem;font-weight:600;color:var(--ink2);padding:.35rem .5rem;border-radius:6px;transition:all .15s;font-family:'Source Sans 3',sans-serif;cursor:pointer}
+.side-link:hover{background:var(--orange-light);color:var(--orange)}
+.side-link::before{content:'→ ';color:var(--orange)}
+.tip-card{background:linear-gradient(135deg,var(--navy),#1e2d45);border-radius:12px;padding:1.1rem}
+.tip-label{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#FB923C;margin-bottom:.4rem;font-family:'Source Sans 3',sans-serif}
+.tip-text{font-size:.8rem;color:rgba(255,255,255,.75);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+.tip-code{font-family:'JetBrains Mono',monospace;font-size:.75rem;background:rgba(255,255,255,.07);border-radius:6px;padding:.5rem .75rem;margin-top:.5rem;color:#86EFAC;display:block}
+
+/* ── QUIZ ── */
+.quiz-wrap{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:1.5rem;box-shadow:var(--shadow-md)}
+.quiz-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;padding-bottom:.85rem;border-bottom:1px solid var(--border)}
+.quiz-title{font-family:'Merriweather',serif;font-size:1rem;font-weight:700;color:var(--ink)}
+.quiz-badge{font-size:.7rem;font-weight:800;background:var(--orange-light);color:var(--orange);padding:.2rem .6rem;border-radius:99px;font-family:'Source Sans 3',sans-serif}
+.quiz-q{font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:.85rem;font-family:'Merriweather',serif;line-height:1.4}
+.quiz-options{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem}
+.quiz-opt{padding:.6rem .9rem;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;font-size:.85rem;font-family:'Source Sans 3',sans-serif;font-weight:600;color:var(--ink);transition:all .15s;background:var(--white)}
+.quiz-opt:hover{border-color:var(--orange);background:var(--orange-light);color:var(--orange-dark)}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:#065F46}
+.quiz-opt.wrong{border-color:#DC2626;background:#FEF2F2;color:#991B1B}
+.quiz-feedback{font-size:.82rem;padding:.6rem .85rem;border-radius:8px;margin-bottom:.85rem;font-family:'Source Sans 3',sans-serif;display:none}
+.quiz-feedback.show{display:block}
+.quiz-feedback.ok{background:var(--green-light);color:#065F46;border-left:3px solid var(--green)}
+.quiz-feedback.bad{background:#FEF2F2;color:#991B1B;border-left:3px solid #DC2626}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center}
+.quiz-prog{font-size:.78rem;color:var(--gray);font-family:'Source Sans 3',sans-serif}
+.quiz-btn{background:var(--orange);color:#fff;border:none;padding:.5rem 1.25rem;border-radius:7px;font-size:.83rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:background .15s}
+.quiz-btn:hover{background:var(--orange-dark)}
+.quiz-result{text-align:center;padding:1.5rem 1rem;display:none}
+.quiz-result.show{display:block}
+.qr-stars{font-size:2rem;margin-bottom:.5rem}
+.qr-score{font-family:'Merriweather',serif;font-size:1.5rem;font-weight:900;color:var(--orange);margin-bottom:.25rem}
+.qr-msg{font-size:.88rem;color:var(--gray);font-family:'Source Sans 3',sans-serif;margin-bottom:1rem}
+.qr-retry{background:var(--orange-light);color:var(--orange);border:1.5px solid var(--orange-mid);padding:.5rem 1.25rem;border-radius:7px;font-size:.83rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+
+/* ── CODE SNIPPETS SECTION ── */
+.snippet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem}
+.snippet-card{background:var(--navy);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md)}
+.snip-bar{background:rgba(255,255,255,.06);padding:.55rem .9rem;display:flex;align-items:center;gap:.4rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.snip-dot{width:9px;height:9px;border-radius:50%}
+.snip-label{font-size:.7rem;color:rgba(255,255,255,.4);font-family:'JetBrains Mono',monospace;margin-left:auto}
+.snip-title{font-size:.78rem;font-weight:800;color:rgba(255,255,255,.6);font-family:'Source Sans 3',sans-serif}
+.snip-code{padding:.9rem 1rem;font-family:'JetBrains Mono',monospace;font-size:.76rem;line-height:1.75;color:#CBD5E1}
+.snip-code .kw{color:#FB923C}
+.snip-code .fn{color:#38BDF8}
+.snip-code .str{color:#86EFAC}
+.snip-code .cm{color:#475569}
+.snip-code .num{color:#F9A8D4}
+.snip-code .cls{color:#FCD34D}
+.snip-copy{display:block;background:rgba(255,255,255,.04);border:none;border-top:1px solid rgba(255,255,255,.07);width:100%;padding:.5rem;font-size:.72rem;color:rgba(255,255,255,.4);font-family:'Source Sans 3',sans-serif;cursor:pointer;transition:all .15s;text-align:center;font-weight:700}
+.snip-copy:hover{background:rgba(234,88,12,.15);color:#FB923C}
+
+/* ── COMPARISON TABLE ── */
+.comp-table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+.comp-table{width:100%;border-collapse:collapse;font-family:'Source Sans 3',sans-serif}
+.comp-table th{background:var(--navy);color:#fff;padding:.75rem 1rem;font-size:.8rem;font-weight:800;text-align:center}
+.comp-table th:first-child{text-align:left}
+.comp-table th.highlight{background:var(--orange);color:#fff}
+.comp-table td{padding:.7rem 1rem;font-size:.82rem;border-bottom:1px solid var(--border);text-align:center;color:var(--ink2)}
+.comp-table td:first-child{font-weight:700;color:var(--ink);text-align:left}
+.comp-table td.highlight{background:var(--orange-light);font-weight:700;color:var(--orange-dark)}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table tr:nth-child(even) td{background:#FAFAFA}
+.comp-table tr:nth-child(even) td.highlight{background:var(--orange-light)}
+.check{color:var(--green);font-size:1rem}
+.cross{color:#DC2626;font-size:1rem}
+
+/* ── TESTIMONIALS ── */
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.testi-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.25rem;box-shadow:var(--shadow-sm)}
+.tc-stars{color:#F59E0B;font-size:.9rem;margin-bottom:.6rem}
+.tc-text{font-size:.85rem;color:var(--ink2);line-height:1.7;font-family:'Source Sans 3',sans-serif;margin-bottom:.85rem;font-style:italic}
+.tc-author{display:flex;align-items:center;gap:.6rem}
+.tc-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#FCD34D);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:900;color:#fff;flex-shrink:0}
+.tc-name{font-size:.82rem;font-weight:700;color:var(--ink);font-family:'Source Sans 3',sans-serif}
+.tc-role{font-size:.72rem;color:var(--gray);font-family:'Source Sans 3',sans-serif}
+
+/* ── TOOLS / LIBRARIES ── */
+.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem}
+.lib-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;box-shadow:var(--shadow-sm);display:flex;gap:.75rem;align-items:flex-start;transition:all .2s}
+.lib-card:hover{box-shadow:var(--shadow-md);border-color:var(--orange-mid)}
+.lib-icon{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.lib-name{font-size:.83rem;font-weight:700;color:var(--ink);font-family:'Source Sans 3',sans-serif;margin-bottom:.15rem}
+.lib-desc{font-size:.73rem;color:var(--gray);line-height:1.5;font-family:'Source Sans 3',sans-serif}
+.lib-badge{display:inline-block;font-size:.6rem;font-weight:800;text-transform:uppercase;padding:.1rem .4rem;border-radius:99px;margin-top:.3rem;font-family:'Source Sans 3',sans-serif}
+.lib-badge.free{background:var(--green-light);color:#065F46}
+.lib-badge.popular{background:var(--orange-light);color:var(--orange-dark)}
+
+/* ── ROADMAP ── */
+.roadmap-wrap{display:flex;flex-direction:column;gap:0;position:relative}
+.roadmap-wrap::before{content:'';position:absolute;left:28px;top:20px;bottom:20px;width:2px;background:linear-gradient(to bottom,var(--orange),var(--border));z-index:0}
+.rm-step{display:flex;gap:1.25rem;align-items:flex-start;padding:.75rem 0;position:relative;z-index:1}
+.rm-dot{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--orange)}
+.rm-body{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.9rem 1.1rem;box-shadow:var(--shadow-sm)}
+.rm-title{font-family:'Merriweather',serif;font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
+.rm-desc{font-size:.82rem;color:var(--gray);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+.rm-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
+.rm-tag{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:.15rem .5rem;border-radius:99px;font-family:'Source Sans 3',sans-serif;background:var(--orange-light);color:var(--orange)}
+
+/* ── MISTAKES ── */
+.mistakes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.85rem}
+.mistake-card{background:var(--white);border:1px solid var(--border);border-left:4px solid #DC2626;border-radius:0 11px 11px 0;padding:1rem 1.1rem;box-shadow:var(--shadow-sm)}
+.mk-num{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#DC2626;font-family:'Source Sans 3',sans-serif;margin-bottom:.3rem}
+.mk-title{font-family:'Merriweather',serif;font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.mk-fix{font-size:.78rem;color:var(--gray);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+.mk-fix strong{color:var(--green)}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:.6rem}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.faq-q{padding:.9rem 1.1rem;font-size:.88rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:'Source Sans 3',sans-serif;transition:background .15s}
+.faq-q:hover{background:var(--orange-light)}
+.faq-q .faq-icon{color:var(--orange);font-size:1rem;flex-shrink:0;transition:transform .2s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:.75rem 1.1rem 1rem;font-size:.84rem;color:var(--ink2);line-height:1.7;font-family:'Source Sans 3',sans-serif;border-top:1px solid var(--border);background:var(--gray-light)}
+.faq-item.open .faq-a{display:block}
+
+/* ── GLOSSARY ── */
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.gloss-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;box-shadow:var(--shadow-sm)}
+.gloss-term{font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;color:var(--orange);margin-bottom:.25rem}
+.gloss-def{font-size:.78rem;color:var(--gray);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+
+/* ── CAREERS ── */
+.career-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.85rem}
+.career-card{background:var(--white);border:1px solid var(--border);border-radius:11px;padding:1.1rem;box-shadow:var(--shadow-sm);transition:all .2s}
+.career-card:hover{box-shadow:var(--shadow-md);border-color:var(--orange-mid);transform:translateY(-2px)}
+.cc-icon{font-size:1.5rem;margin-bottom:.5rem}
+.cc-title{font-family:'Merriweather',serif;font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
+.cc-salary{font-size:.78rem;font-weight:800;color:var(--green);font-family:'Source Sans 3',sans-serif;margin-bottom:.35rem}
+.cc-desc{font-size:.75rem;color:var(--gray);line-height:1.55;font-family:'Source Sans 3',sans-serif}
+.cc-badge{display:inline-block;font-size:.62rem;font-weight:800;text-transform:uppercase;background:var(--orange-light);color:var(--orange-dark);padding:.15rem .5rem;border-radius:99px;margin-top:.4rem;font-family:'Source Sans 3',sans-serif}
+
+/* ── BLOG CARDS ── */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.blog-card{background:var(--white);border:1px solid var(--border);border-radius:11px;overflow:hidden;box-shadow:var(--shadow-sm);transition:all .2s}
+.blog-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.blog-thumb{height:80px;display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.blog-body{padding:.9rem 1rem}
+.blog-cat{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--orange);font-family:'Source Sans 3',sans-serif;margin-bottom:.3rem}
+.blog-title{font-family:'Merriweather',serif;font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.35rem;line-height:1.35}
+.blog-excerpt{font-size:.78rem;color:var(--gray);line-height:1.6;font-family:'Source Sans 3',sans-serif;margin-bottom:.5rem}
+.blog-meta{font-size:.68rem;color:var(--gray);display:flex;gap:.6rem;font-family:'Source Sans 3',sans-serif}
+
+/* ── NEWSLETTER ── */
+.newsletter-strip{background:linear-gradient(135deg,var(--navy),#1e2d45);padding:2.5rem 1.5rem;text-align:center}
+.nl-title{font-family:'Merriweather',serif;font-size:1.5rem;font-weight:900;color:#fff;margin-bottom:.5rem}
+.nl-sub{font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:1.25rem;font-family:'Source Sans 3',sans-serif}
+.nl-form{display:flex;gap:.6rem;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.nl-input{flex:1;min-width:220px;padding:.7rem 1rem;border-radius:7px;border:none;font-size:.88rem;font-family:'Source Sans 3',sans-serif;outline:none}
+.nl-btn{background:var(--orange);color:#fff;border:none;padding:.7rem 1.5rem;border-radius:7px;font-weight:800;font-size:.88rem;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+.nl-btn:hover{background:var(--orange-dark)}
+
+/* ── MEGA CTA ── */
+.mega-cta{background:linear-gradient(135deg,var(--navy),#1e2d45);border-radius:20px;padding:3rem;text-align:center}
+.mc-badge{display:inline-block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);color:#FB923C;padding:.3rem 1rem;border-radius:99px;margin-bottom:1.2rem;font-family:'Source Sans 3',sans-serif}
+.mc-title{font-family:'Merriweather',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:#fff;margin-bottom:.75rem}
+.mc-sub{font-size:1rem;color:rgba(255,255,255,.65);max-width:560px;margin:0 auto 1.5rem;line-height:1.7;font-family:'Source Sans 3',sans-serif}
+.mc-features{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.75rem}
+.mc-feat{font-size:.82rem;font-weight:700;color:rgba(255,255,255,.75);font-family:'Source Sans 3',sans-serif}
+.mc-btn{background:var(--orange);color:#fff;border:none;padding:1rem 2.5rem;border-radius:10px;font-size:1.1rem;font-weight:900;cursor:pointer;font-family:'Source Sans 3',sans-serif;box-shadow:0 6px 24px rgba(234,88,12,.35);transition:all .2s}
+.mc-btn:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.mc-proof{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:1rem;font-family:'Source Sans 3',sans-serif}
+
+/* ── OUTCOME GRID ── */
+.outcome-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.85rem}
+.outcome-card{background:var(--white);border:1px solid var(--border);border-radius:11px;padding:1.25rem;text-align:center;box-shadow:var(--shadow-sm)}
+.oc-icon{font-size:1.8rem;margin-bottom:.5rem}
+.oc-val{font-family:'Merriweather',serif;font-size:1.5rem;font-weight:900;color:var(--orange);margin-bottom:.2rem}
+.oc-lbl{font-size:.78rem;color:var(--gray);font-family:'Source Sans 3',sans-serif;line-height:1.4}
+
+/* ── HABITS ── */
+.habits-list{display:flex;flex-direction:column;gap:.7rem}
+.habit-item{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;box-shadow:var(--shadow-sm)}
+.habit-day{background:var(--orange);color:#fff;border-radius:8px;width:52px;height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.hd-num{font-family:'Merriweather',serif;font-size:1rem;font-weight:900;line-height:1}
+.hd-lbl{font-size:.55rem;text-transform:uppercase;letter-spacing:.05em;font-family:'Source Sans 3',sans-serif}
+.habit-title{font-family:'Merriweather',serif;font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:.2rem}
+.habit-desc{font-size:.8rem;color:var(--gray);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+.habit-tool{font-size:.7rem;font-weight:800;background:var(--orange-light);color:var(--orange-dark);padding:.15rem .5rem;border-radius:99px;display:inline-block;margin-top:.35rem;font-family:'Source Sans 3',sans-serif}
+
+/* ── QCB BANNER ── */
+.quiz-challenge-banner{background:linear-gradient(135deg,var(--orange-dark),var(--orange));border-radius:14px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin:1.5rem 0;flex-wrap:wrap}
+.qcb-left{display:flex;align-items:center;gap:1rem}
+.qcb-icon{font-size:2rem;flex-shrink:0}
+.qcb-title{font-family:'Merriweather',serif;font-size:1.1rem;font-weight:700;color:#fff}
+.qcb-sub{font-size:.82rem;color:rgba(255,255,255,.7);font-family:'Source Sans 3',sans-serif}
+.qcb-btn{background:#fff;color:var(--orange-dark);border:none;padding:.7rem 1.5rem;border-radius:8px;font-weight:800;font-size:.9rem;cursor:pointer;font-family:'Source Sans 3',sans-serif;white-space:nowrap}
+
+/* ── RELATED COURSES ── */
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.85rem}
+.related-card{background:var(--white);border:1px solid var(--border);border-radius:11px;padding:1.25rem;box-shadow:var(--shadow-sm);transition:all .2s;cursor:pointer}
+.related-card:hover{box-shadow:var(--shadow-md);border-color:var(--orange-mid);transform:translateY(-2px)}
+.rc-emoji{font-size:1.6rem;margin-bottom:.5rem}
+.rc-title{font-family:'Merriweather',serif;font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
+.rc-desc{font-size:.75rem;color:var(--gray);font-family:'Source Sans 3',sans-serif;margin-bottom:.5rem;line-height:1.5}
+.rc-meta{font-size:.7rem;font-weight:800;color:var(--orange);font-family:'Source Sans 3',sans-serif}
+
+/* ── BEFORE/AFTER ── */
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.ba-card{border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--border)}
+.ba-task{background:var(--navy);color:#fff;padding:.6rem 1.1rem;font-size:.8rem;font-weight:800;font-family:'Source Sans 3',sans-serif;text-transform:uppercase;letter-spacing:.07em}
+.ba-sides{display:grid;grid-template-columns:1fr 1fr}
+.ba-before{background:#FEF2F2;padding:.9rem 1rem}
+.ba-after{background:#F0FDF4;padding:.9rem 1rem;border-left:2px solid #BBF7D0}
+.ba-label{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.4rem;font-family:'Source Sans 3',sans-serif}
+.ba-before .ba-label{color:#DC2626}
+.ba-after .ba-label{color:#16A34A}
+.ba-text{font-size:.82rem;color:var(--ink2);line-height:1.6;font-family:'Source Sans 3',sans-serif}
+.ba-time{font-size:.72rem;font-weight:800;font-family:'Source Sans 3',sans-serif;margin-top:.4rem}
+.ba-before .ba-time{color:#DC2626}
+.ba-after .ba-time{color:#16A34A}
+
+/* ── LESSON READER OVERLAY ── */
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.85);z-index:9999;display:none;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto}
+.overlay.open{display:flex}
+.lesson-panel{background:var(--white);border-radius:16px;width:100%;max-width:740px;max-height:90vh;overflow-y:auto;box-shadow:0 25px 60px rgba(0,0,0,.3)}
+.lp-header{background:var(--navy);padding:1.25rem 1.5rem;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:space-between}
+.lp-module{font-size:.7rem;font-weight:800;color:#FB923C;text-transform:uppercase;letter-spacing:.07em;font-family:'Source Sans 3',sans-serif}
+.lp-title{font-family:'Merriweather',serif;font-size:1.05rem;font-weight:700;color:#fff;margin-top:.2rem}
+.lp-close{background:rgba(255,255,255,.1);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.lp-body{padding:1.5rem}
+.lp-body h3{font-family:'Merriweather',serif;font-size:1rem;font-weight:700;color:var(--ink);margin:1.25rem 0 .5rem}
+.lp-body h3:first-child{margin-top:0}
+.lp-body p{font-size:.88rem;color:var(--ink2);line-height:1.8;margin-bottom:.85rem;font-family:'Source Sans 3',sans-serif}
+.lp-body ul{padding-left:1.25rem;margin-bottom:.85rem}
+.lp-body li{font-size:.88rem;color:var(--ink2);line-height:1.75;margin-bottom:.3rem;font-family:'Source Sans 3',sans-serif}
+.lp-code{background:var(--navy);border-radius:10px;padding:1rem 1.25rem;font-family:'JetBrains Mono',monospace;font-size:.8rem;line-height:1.75;color:#E2E8F0;overflow-x:auto;margin:1rem 0}
+.lp-code .kw{color:#FB923C}
+.lp-code .fn{color:#38BDF8}
+.lp-code .str{color:#86EFAC}
+.lp-code .cm{color:#64748B}
+.lp-code .num{color:#F9A8D4}
+.lp-note{background:var(--orange-light);border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:.75rem 1rem;margin:1rem 0;font-size:.84rem;color:var(--orange-dark);font-family:'Source Sans 3',sans-serif;line-height:1.6}
+.lp-nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;border-top:1px solid var(--border);background:var(--gray-light);border-radius:0 0 16px 16px}
+.lp-nav-btn{background:var(--orange);color:#fff;border:none;padding:.5rem 1.1rem;border-radius:7px;font-size:.82rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+.lp-nav-btn.ghost{background:var(--white);color:var(--ink);border:1.5px solid var(--border)}
+
+/* ── CERTIFICATE OVERLAY ── */
+.cert-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem}
+.cert-overlay.open{display:flex}
+.cert-wrap{background:var(--white);border-radius:16px;padding:2.5rem;max-width:640px;width:100%;text-align:center;position:relative;border:4px solid var(--orange)}
+.cert-emoji{font-size:3rem;margin-bottom:.5rem}
+.cert-title{font-family:'Merriweather',serif;font-size:1.6rem;font-weight:900;color:var(--navy);margin-bottom:.25rem}
+.cert-sub{font-size:.88rem;color:var(--gray);font-family:'Source Sans 3',sans-serif;margin-bottom:1rem}
+.cert-name{font-family:'Merriweather',serif;font-size:1.3rem;font-weight:700;color:var(--orange);border-bottom:2px solid var(--orange-mid);padding-bottom:.5rem;margin-bottom:1rem;display:inline-block}
+.cert-course{font-size:.9rem;color:var(--ink2);font-family:'Source Sans 3',sans-serif;margin-bottom:1.5rem}
+.cert-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+.cert-print{background:var(--orange);color:#fff;border:none;padding:.65rem 1.5rem;border-radius:7px;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+.cert-close{background:var(--white);color:var(--ink);border:1.5px solid var(--border);padding:.65rem 1.5rem;border-radius:7px;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);color:rgba(255,255,255,.55);padding:2.5rem 1.5rem 1.5rem;font-family:'Source Sans 3',sans-serif}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr 1fr}}
+.footer-logo{font-family:'Merriweather',serif;font-size:1.1rem;font-weight:900;color:#fff;margin-bottom:.5rem}
+.footer-tagline{font-size:.78rem;line-height:1.6;margin-bottom:.75rem}
+.footer-col-title{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#fff;margin-bottom:.6rem}
+.footer-links{display:flex;flex-direction:column;gap:.35rem}
+.footer-links a{font-size:.78rem;color:rgba(255,255,255,.45);transition:color .15s}
+.footer-links a:hover{color:#FB923C}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.72rem}
+.footer-legal a{color:rgba(255,255,255,.35);margin-left:1rem}
+
+@media print{.overlay,.cert-overlay,nav,.ticker,.ad-wrap,footer,.newsletter-strip{display:none!important}.cert-wrap{border:3px solid var(--orange);box-shadow:none}}
+@media(max-width:600px){.hero{padding:2.5rem 1rem 2rem}.section{padding:2rem 0}.mega-cta{padding:2rem 1.25rem}}
+
+/* ── FORCE MODULE CARD LEGIBILITY ── */
+.module-card,.module-card .mc-header{background:#ffffff !important}
+.module-card .mc-title{color:#111827 !important;font-weight:900 !important;opacity:1 !important}
+.module-card .mc-sub{color:#374151 !important;opacity:1 !important}
+.module-card .lesson-row{background:#ffffff !important}
+.module-card .lesson-row:hover{background:#FFF3E0 !important}
+.module-card .lr-title{color:#111827 !important;font-weight:700 !important}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--navy);padding:.85rem 1.5rem}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:.5rem}
+.tb-item{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.75);font-size:.78rem;font-family:'Source Sans 3',sans-serif;font-weight:600}
+.tb-icon{font-size:1rem}
+/* ── MODULE QUIZ CARDS ── */
+.mod-quiz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:1.5rem}
+.mod-quiz-card{background:#fff;border:2px solid #E5E7EB;border-radius:12px;padding:1.25rem;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .2s}
+.mod-quiz-card:hover{border-color:#EA580C;box-shadow:0 4px 16px rgba(234,88,12,.12)}
+.mqc-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.85rem}
+.mqc-icon{width:42px;height:42px;border-radius:10px;background:#FED7AA;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.mqc-title{font-family:'Merriweather',serif;font-size:.9rem;font-weight:700;color:#111827}
+.mqc-meta{font-size:.72rem;color:#6B7280;font-family:'Source Sans 3',sans-serif;margin-top:.1rem}
+.mqc-score{font-size:.75rem;font-weight:800;padding:.2rem .6rem;border-radius:99px;font-family:'Source Sans 3',sans-serif;display:inline-block;margin-bottom:.65rem}
+.mqc-score.none{background:#F3F4F6;color:#9CA3AF}
+.mqc-score.pass{background:#DCFCE7;color:#15803D}
+.mqc-score.fail{background:#FEE2E2;color:#DC2626}
+.mqc-btn{width:100%;background:#EA580C;color:#fff;border:none;padding:.55rem;border-radius:8px;font-size:.83rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:background .15s}
+.mqc-btn:hover{background:#C2410C}
+.mqc-btn.done{background:#16A34A}
+/* ── MODULE QUIZ MODAL ── */
+.mq-overlay{position:fixed;inset:0;background:rgba(15,23,42,.88);z-index:9998;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.mq-overlay.open{display:flex}
+.mq-panel{background:#fff;border-radius:16px;width:100%;max-width:580px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.3)}
+.mq-head{background:var(--navy);padding:1.1rem 1.4rem;display:flex;align-items:center;justify-content:space-between}
+.mq-mod-label{font-size:.68rem;font-weight:800;color:#FB923C;text-transform:uppercase;letter-spacing:.07em;font-family:'Source Sans 3',sans-serif}
+.mq-title{font-family:'Merriweather',serif;font-size:1rem;font-weight:700;color:#fff;margin-top:.15rem}
+.mq-close{background:rgba(255,255,255,.1);border:none;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center}
+.mq-body{padding:1.4rem}
+.mq-q{font-family:'Merriweather',serif;font-size:.95rem;font-weight:700;color:#111827;margin-bottom:.9rem;line-height:1.45}
+.mq-opts{display:flex;flex-direction:column;gap:.5rem;margin-bottom:.9rem}
+.mq-opt{padding:.6rem .9rem;border:1.5px solid #E5E7EB;border-radius:8px;cursor:pointer;font-size:.85rem;font-family:'Source Sans 3',sans-serif;font-weight:600;color:#111827;background:#fff;transition:all .15s;text-align:left}
+.mq-opt:hover{border-color:#EA580C;background:#FFF7ED}
+.mq-opt.correct{border-color:#16A34A;background:#DCFCE7;color:#15803D}
+.mq-opt.wrong{border-color:#DC2626;background:#FEF2F2;color:#991B1B}
+.mq-feedback{font-size:.82rem;padding:.6rem .85rem;border-radius:8px;margin-bottom:.85rem;font-family:'Source Sans 3',sans-serif;display:none}
+.mq-feedback.show{display:block}
+.mq-feedback.ok{background:#DCFCE7;color:#15803D;border-left:3px solid #16A34A}
+.mq-feedback.bad{background:#FEF2F2;color:#991B1B;border-left:3px solid #DC2626}
+.mq-nav{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1.4rem;border-top:1px solid #E5E7EB;background:#F9FAFB}
+.mq-prog{font-size:.78rem;color:#6B7280;font-family:'Source Sans 3',sans-serif}
+.mq-btn{background:#EA580C;color:#fff;border:none;padding:.5rem 1.2rem;border-radius:7px;font-size:.82rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+.mq-btn:hover{background:#C2410C}
+.mq-result{text-align:center;padding:2rem 1.4rem;display:none}
+.mq-result.show{display:block}
+.mqr-stars{font-size:2.2rem;margin-bottom:.4rem}
+.mqr-score{font-family:'Merriweather',serif;font-size:1.6rem;font-weight:900;color:#EA580C;margin-bottom:.25rem}
+.mqr-msg{font-size:.88rem;color:#6B7280;font-family:'Source Sans 3',sans-serif;margin-bottom:1rem}
+.mqr-retry{background:#FFF7ED;color:#EA580C;border:1.5px solid #FED7AA;padding:.5rem 1.2rem;border-radius:7px;font-size:.83rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif;margin-right:.5rem}
+.mqr-close{background:#111827;color:#fff;border:none;padding:.5rem 1.2rem;border-radius:7px;font-size:.83rem;font-weight:800;cursor:pointer;font-family:'Source Sans 3',sans-serif}
+/* ── INSTRUCTOR ── */
+.instructor-wrap{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:start;background:#fff;border:2px solid #E5E7EB;border-radius:14px;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+@media(max-width:600px){.instructor-wrap{grid-template-columns:1fr}}
+.inst-avatar{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,#EA580C,#FCD34D);display:flex;align-items:center;justify-content:center;font-size:2.2rem;flex-shrink:0}
+.inst-name{font-family:'Merriweather',serif;font-size:1.15rem;font-weight:700;color:#111827;margin-bottom:.15rem}
+.inst-role{font-size:.82rem;color:#6B7280;font-family:'Source Sans 3',sans-serif;margin-bottom:.75rem}
+.inst-bio{font-size:.88rem;color:#374151;line-height:1.8;font-family:'Source Sans 3',sans-serif;margin-bottom:.75rem}
+.inst-creds{display:flex;gap:.5rem;flex-wrap:wrap}
+.inst-cred{font-size:.7rem;font-weight:800;background:#FFF7ED;color:#C2410C;padding:.2rem .6rem;border-radius:99px;font-family:'Source Sans 3',sans-serif;text-transform:uppercase;letter-spacing:.04em;border:1px solid #FED7AA}
+/* ── COURSE COMPARISON ── */
+.course-comp-wrap{overflow-x:auto;border-radius:12px;border:2px solid #E5E7EB;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.course-comp{width:100%;border-collapse:collapse;font-family:'Source Sans 3',sans-serif}
+.course-comp th{background:var(--navy);color:#fff;padding:.8rem 1rem;font-size:.8rem;font-weight:800;text-align:center}
+.course-comp th:first-child{text-align:left}
+.course-comp th.hl{background:#EA580C}
+.course-comp td{padding:.7rem 1rem;font-size:.82rem;border-bottom:1px solid #F3F4F6;text-align:center;color:#374151}
+.course-comp td:first-child{font-weight:700;color:#111827;text-align:left}
+.course-comp td.hl{background:#FFF7ED;font-weight:700;color:#C2410C}
+.course-comp tr:last-child td{border-bottom:none}
+.course-comp tr:nth-child(even) td{background:#FAFAFA}
+.course-comp tr:nth-child(even) td.hl{background:#FFF7ED}
+/* ── CERT NAME INPUT ── */
+.cert-name-input{width:100%;border:none;border-bottom:2px solid #EA580C;font-family:'Merriweather',serif;font-size:1.2rem;font-weight:700;color:#EA580C;text-align:center;background:transparent;outline:none;padding:.3rem .5rem;margin-bottom:.75rem}
+.cert-name-input::placeholder{color:#FED7AA;font-weight:400;font-style:italic}
+.cert-name-display{font-family:'Merriweather',serif;font-size:1.3rem;font-weight:700;color:#EA580C;border-bottom:2px solid #FED7AA;padding-bottom:.5rem;margin-bottom:.75rem;display:none}
+
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker" id="ticker">
+  <div class="ticker-inner" id="tickerInner"></div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-progress"><div class="np-fill" id="npFill"></div></div>
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <span class="logo-py">🐍</span>
+      <span>Py<span class="logo-learn">Learn</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="#course">Course</a>
+      <a href="#snippets">Code</a>
+      <a href="#careers">Careers</a>
+      <a href="#faq">FAQ</a>
+      <a href="#glossary">Glossary</a>
+    </div>
+    <button class="nav-cta" onclick="startCourse()">Start Free →</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-snake">🐍</div>
+  <div class="hero-inner wrap">
+    <div class="hero-left">
+      <div class="hero-badge">🆓 100% Free · No Sign-Up · Certificate Included</div>
+      <h1>Learn Python<br><span>in 24 Hours.</span><br>You're in the right place.</h1>
+      <p class="hero-sub">Go from complete beginner to writing real Python programs — for data, automation, web scraping, and more. Self-paced. Free forever. Start right now.</p>
+      <div class="hero-pills">
+        <span class="hero-pill">🟢 Beginner-friendly</span>
+        <span class="hero-pill">📖 24 lessons</span>
+        <span class="hero-pill">🏆 Free certificate</span>
+        <span class="hero-pill">💻 Hands-on code</span>
+        <span class="hero-pill">🚀 Real projects</span>
+      </div>
+      <div class="hero-social">
+        <div class="avatar-stack">
+          <span>JK</span><span>MR</span><span>AS</span><span>PT</span><span>+</span>
+        </div>
+        <div class="social-text"><strong>31,400+</strong> learners enrolled this month</div>
+      </div>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="startCourse()">🚀 Start Learning — It's Free</button>
+        <button class="btn-ghost" onclick="document.getElementById('course').scrollIntoView({behavior:'smooth'})">See Curriculum ↓</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="code-titlebar">
+        <div class="code-dot" style="background:#FF5F57"></div>
+        <div class="code-dot" style="background:#FEBC2E"></div>
+        <div class="code-dot" style="background:#28C840"></div>
+        <span class="code-filename">hello_world.py</span>
+      </div>
+      <div class="code-block">
+<span class="cm"># Your first Python program</span>
+<span class="kw">print</span>(<span class="str">"Hello, World!"</span>)
+
+<span class="cm"># Variables & loops</span>
+<span class="fn">name</span> = <span class="str">"Python Learner"</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">3</span>):
+    <span class="kw">print</span>(<span class="str">f"Hi, {name}! Hour {i+1}"</span>)
+
+<span class="cm"># Functions</span>
+<span class="kw">def</span> <span class="fn">greet</span>(name):
+    <span class="kw">return</span> <span class="str">f"Welcome, {name}!"</span>
+
+<span class="kw">print</span>(<span class="fn">greet</span>(<span class="str">"You"</span>))
+      </div>
+      <div class="code-output">Hello, World!<br>Hi, Python Learner! Hour 1<br>Welcome, You!</div>
+    </div>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-strip-inner">
+    <div class="ss-item"><span class="ss-val">24</span><span class="ss-lbl">Lessons</span></div>
+    <div class="ss-item"><span class="ss-val">6</span><span class="ss-lbl">Modules</span></div>
+    <div class="ss-item"><span class="ss-val">6</span><span class="ss-lbl">Quizzes</span></div>
+    <div class="ss-item"><span class="ss-val">30+</span><span class="ss-lbl">Code Examples</span></div>
+    <div class="ss-item"><span class="ss-val">0</span><span class="ss-lbl">Cost</span></div>
+    <div class="ss-item"><span class="ss-val">24 hrs</span><span class="ss-lbl">To Complete</span></div>
+  </div>
+</div>
+
+</div>
+
+<div class="wrap">
+
+  <!-- SKILLS YOU'LL GAIN -->
+  <section class="section" id="skills">
+    <div class="sec-eyebrow">What You'll Learn</div>
+    <h2 class="sec-title">Skills You'll Have After 24 Hours</h2>
+    <p class="sec-sub">By the end of this course you'll be writing real, useful Python programs — not just "Hello World" exercises.</p>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- MAIN COURSE + SIDEBAR -->
+  <section class="section" id="course">
+    <div class="sec-eyebrow">Full Curriculum</div>
+    <h2 class="sec-title">24 Lessons Across 6 Modules</h2>
+    <p class="sec-sub">Each module ends with a quiz. Complete all 6 to unlock your free certificate.</p>
+    <div class="main-layout">
+      <div>
+        <div class="module-list" id="moduleList"></div>
+      </div>
+      <div class="sidebar">
+        <div class="side-card">
+          <div class="side-title">📊 Your Progress</div>
+          <div class="progress-ring-wrap">
+            <canvas id="progressRing" width="100" height="100"></canvas>
+            <div style="font-family:'Merriweather',serif;font-size:.85rem;font-weight:700;color:var(--ink);margin-top:.5rem" id="progLabel">0% Complete</div>
+          </div>
+          <button class="nav-cta" style="width:100%;padding:.6rem;font-size:.82rem" onclick="startCourse()">Continue Learning →</button>
+        </div>
+        <div class="side-card">
+          <div class="side-title">🗺️ Quick Navigation</div>
+          <div class="side-links">
+            <span class="side-link" onclick="document.getElementById('snippets').scrollIntoView({behavior:'smooth'})">Code Snippets</span>
+            <span class="side-link" onclick="document.getElementById('libraries').scrollIntoView({behavior:'smooth'})">Python Libraries</span>
+            <span class="side-link" onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">Learning Roadmap</span>
+            <span class="side-link" onclick="document.getElementById('careers').scrollIntoView({behavior:'smooth'})">Career Paths</span>
+            <span class="side-link" onclick="document.getElementById('mistakes').scrollIntoView({behavior:'smooth'})">Common Mistakes</span>
+            <span class="side-link" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">FAQ</span>
+            <span class="side-link" onclick="document.getElementById('glossary').scrollIntoView({behavior:'smooth'})">Glossary</span>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-label">🐍 Python Tip of the Day</div>
+          <div class="tip-text" id="tipText">Use list comprehensions instead of for loops to write cleaner, faster code.</div>
+          <code class="tip-code" id="tipCode">[x**2 for x in range(10)]</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="wrap">
+
+
+  <!-- MODULE QUIZZES -->
+  <section class="section" id="module-quizzes">
+    <div class="sec-eyebrow">6 Module Quizzes</div>
+    <h2 class="sec-title">Test Your Knowledge — One Quiz Per Module</h2>
+    <p class="sec-sub">Complete each module's lessons then take its quiz. Pass all 6 (score 3/4+) to unlock your free certificate.</p>
+    <div class="mod-quiz-grid" id="modQuizGrid"></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section" id="quiz">
+    <div class="sec-eyebrow">Test Yourself</div>
+    <h2 class="sec-title">Python Knowledge Quiz</h2>
+    <p class="sec-sub">Answer 5 questions and see how much you already know. No sign-up needed.</p>
+    <div class="quiz-wrap" style="max-width:640px">
+      <div class="quiz-header">
+        <div class="quiz-title" id="quizModLabel">Module 1: Python Basics Quiz</div>
+        <span class="quiz-badge" id="quizBadge">Q 1 of 5</span>
+      </div>
+      <div id="quizMain">
+        <div class="quiz-q" id="quizQ"></div>
+        <div class="quiz-options" id="quizOpts"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <div class="quiz-nav">
+          <span class="quiz-prog" id="quizProg">Question 1 of 5</span>
+          <button class="quiz-btn" id="quizNextBtn" onclick="quizNext()" style="display:none">Next Question →</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="qr-stars" id="qrStars"></div>
+        <div class="qr-score" id="qrScore"></div>
+        <div class="qr-msg" id="qrMsg"></div>
+        <button class="qr-retry" onclick="quizReset()">🔄 Try Again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CODE SNIPPETS -->
+  <section class="section" id="snippets">
+    <div class="sec-eyebrow">Ready-to-Use Code</div>
+    <h2 class="sec-title">30 Python Code Snippets You'll Actually Use</h2>
+    <p class="sec-sub">Copy, paste, and adapt these real-world snippets in your own projects. Click the button to copy any snippet.</p>
+    <div class="snippet-grid" id="snippetGrid"></div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="wrap">
+
+  <!-- PYTHON LIBRARIES -->
+  <section class="section" id="libraries">
+    <div class="sec-eyebrow">Essential Tools</div>
+    <h2 class="sec-title">The 24 Python Libraries Every Beginner Should Know</h2>
+    <p class="sec-sub">Python's real power comes from its libraries. Here are the most useful ones grouped by what you want to build.</p>
+    <div class="lib-grid" id="libGrid"></div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section" id="compare">
+    <div class="sec-eyebrow">Why Python?</div>
+    <h2 class="sec-title">Python vs Other Languages — How Does It Compare?</h2>
+    <p class="sec-sub">Choosing your first programming language is a big decision. Here's an honest side-by-side.</p>
+    <div class="comp-table-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="highlight">🐍 Python</th>
+            <th>JavaScript</th>
+            <th>Java</th>
+            <th>C++</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Beginner-Friendly</td><td class="highlight">⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐</td></tr>
+          <tr><td>Syntax Simplicity</td><td class="highlight"><span class="check">✓</span> Very clean</td><td>Moderate</td><td>Verbose</td><td>Complex</td></tr>
+          <tr><td>Data Science & AI</td><td class="highlight"><span class="check">✓</span> #1 choice</td><td>Limited</td><td>Some support</td><td>Rarely used</td></tr>
+          <tr><td>Web Development</td><td class="highlight"><span class="check">✓</span> Django/Flask</td><td><span class="check">✓</span> React/Node</td><td><span class="check">✓</span> Spring</td><td>Rarely</td></tr>
+          <tr><td>Automation & Scripting</td><td class="highlight"><span class="check">✓</span> Best-in-class</td><td>Some</td><td>Limited</td><td>Possible</td></tr>
+          <tr><td>Job Market Demand</td><td class="highlight">🔥 Extremely high</td><td>🔥 Very high</td><td>High</td><td>Moderate</td></tr>
+          <tr><td>Time to First Program</td><td class="highlight">⚡ 5 minutes</td><td>30 minutes</td><td>1 hour</td><td>Several hours</td></tr>
+          <tr><td>Free Libraries</td><td class="highlight">300,000+</td><td>2M+ (npm)</td><td>Moderate</td><td>Limited</td></tr>
+          <tr><td>AI/ML Ecosystem</td><td class="highlight"><span class="check">✓</span> Unmatched</td><td><span class="cross">✗</span></td><td>Partial</td><td><span class="cross">✗</span></td></tr>
+          <tr><td>Best for Beginners?</td><td class="highlight"><strong>YES ✓</strong></td><td>2nd choice</td><td>Not recommended</td><td>Avoid first</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="wrap">
+
+  <!-- ROADMAP -->
+  <section class="section" id="roadmap">
+    <div class="sec-eyebrow">Your Journey</div>
+    <h2 class="sec-title">The Python Learner's Roadmap: Beginner to Job-Ready</h2>
+    <p class="sec-sub">This course covers Stages 1–4. Each stage unlocks real-world capabilities you can use immediately.</p>
+    <div class="roadmap-wrap" id="roadmapWrap"></div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="section" id="transformation">
+    <div class="sec-eyebrow">Real-World Impact</div>
+    <h2 class="sec-title">Before & After: What Python Lets You Do</h2>
+    <p class="sec-sub">These are real tasks people automate with Python every day — and how long they take before and after learning it.</p>
+    <div class="ba-grid" id="baGrid"></div>
+  </section>
+
+
+  <!-- INSTRUCTOR -->
+  <section class="section" id="instructor">
+    <div class="sec-eyebrow">About This Course</div>
+    <h2 class="sec-title">Who Built This &amp; Why It's Free</h2>
+    <div class="instructor-wrap">
+      <div class="inst-avatar">🐍</div>
+      <div>
+        <div class="inst-name">The PyLearn Team</div>
+        <div class="inst-role">Python Practitioners &amp; Educators · Updated January 2025</div>
+        <p class="inst-bio">This course was built by a team of working Python developers, data engineers, and educators who use Python every single day in real production environments. We got tired of watching beginners pay $100–$200 for Python courses that were outdated within months or paywalled after the first three lessons.</p>
+        <p class="inst-bio">So we built the best free Python course we could — and we keep it free by running ads. Every lesson, quiz, code snippet, and certificate will always be free. No upsells, no premium tier, no email required. That is our promise.</p>
+        <div class="inst-creds">
+          <span class="inst-cred">✓ Built by practitioners</span>
+          <span class="inst-cred">✓ Updated monthly</span>
+          <span class="inst-cred">✓ Free forever</span>
+          <span class="inst-cred">✓ 31K+ students</span>
+          <span class="inst-cred">✓ Real code in every lesson</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COURSE COMPARISON -->
+  <section class="section" id="course-compare">
+    <div class="sec-eyebrow">Why Choose PyLearn?</div>
+    <h2 class="sec-title">PyLearn vs Paid Courses — Honest Comparison</h2>
+    <p class="sec-sub">Before you spend $100+ on a Python course, see how we stack up against the most popular paid alternatives.</p>
+    <div class="course-comp-wrap">
+      <table class="course-comp">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="hl">🐍 PyLearn</th>
+            <th>Udemy</th>
+            <th>Codecademy</th>
+            <th>Coursera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Price</td><td class="hl"><strong>Free forever</strong></td><td>$15–$85</td><td>$20/mo</td><td>$50/mo</td></tr>
+          <tr><td>Sign-up required</td><td class="hl">Never ✅</td><td>Required</td><td>Required</td><td>Required</td></tr>
+          <tr><td>Lessons</td><td class="hl"><strong>24 full lessons</strong></td><td>100–200 videos</td><td>~50 exercises</td><td>~60 videos</td></tr>
+          <tr><td>Module quizzes</td><td class="hl">6 quizzes ✅</td><td>Varies</td><td>Yes</td><td>Yes</td></tr>
+          <tr><td>Certificate</td><td class="hl">Free ✅</td><td>Paid</td><td>Paid tier</td><td>Paid</td></tr>
+          <tr><td>Works offline</td><td class="hl">Yes ✅</td><td>App only</td><td>No</td><td>No</td></tr>
+          <tr><td>Code in every lesson</td><td class="hl">Yes ✅</td><td>Varies</td><td>Yes</td><td>Varies</td></tr>
+          <tr><td>Progress saved</td><td class="hl">Auto (local) ✅</td><td>Cloud</td><td>Cloud</td><td>Cloud</td></tr>
+          <tr><td>Updated 2025</td><td class="hl">Jan 2025 ✅</td><td>Varies</td><td>Regular</td><td>Varies</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="reviews">
+    <div class="sec-eyebrow">Student Reviews</div>
+    <h2 class="sec-title">What Our Learners Say</h2>
+    <p class="sec-sub">Real feedback from people who started with zero Python experience.</p>
+    <div class="testi-grid" id="testiGrid"></div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="wrap">
+
+  <!-- CAREERS -->
+  <section class="section" id="careers">
+    <div class="sec-eyebrow">Career Opportunities</div>
+    <h2 class="sec-title">10 High-Paying Jobs That Require Python in 2025</h2>
+    <p class="sec-sub">Python is the most in-demand programming language in the world. Here are the top roles — and what they pay.</p>
+    <div class="career-grid" id="careerGrid"></div>
+  </section>
+
+  <!-- QUIZ CHALLENGE BANNER -->
+  <div class="quiz-challenge-banner">
+    <div class="qcb-left">
+      <div class="qcb-icon">🏆</div>
+      <div>
+        <div class="qcb-title">Ready to Test Your Python Knowledge?</div>
+        <div class="qcb-sub">Take the quiz — no sign-up, instant results, 5 questions</div>
+      </div>
+    </div>
+    <button class="qcb-btn" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">Take the Quiz →</button>
+  </div>
+
+  <!-- MISTAKES -->
+  <section class="section" id="mistakes">
+    <div class="sec-eyebrow">Avoid These</div>
+    <h2 class="sec-title">The 8 Biggest Mistakes Python Beginners Make</h2>
+    <p class="sec-sub">These traps catch nearly every new learner. Know them in advance and skip weeks of frustration.</p>
+    <div class="mistakes-grid" id="mistakesGrid"></div>
+  </section>
+
+  <!-- DAILY HABITS -->
+  <section class="section" id="habits" style="background:var(--gray-light);margin:0 -1.5rem;padding:3rem 1.5rem">
+    <div class="sec-eyebrow">Build a Habit</div>
+    <h2 class="sec-title">The 10-Day Python Practice Plan</h2>
+    <p class="sec-sub">Spend 20 minutes a day on this plan and you'll be writing real programs by Day 10. Consistency is everything.</p>
+    <div class="habits-list" id="habitsList"></div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="wrap">
+
+  <!-- COMMUNITY OUTCOMES -->
+  <section class="section" id="outcomes">
+    <div class="sec-eyebrow">Community Results</div>
+    <h2 class="sec-title">What 31,000+ Learners Achieved</h2>
+    <p class="sec-sub">Real outcomes from students who completed this course and started using Python in their work or career.</p>
+    <div class="outcome-grid" id="outcomeGrid"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="sec-eyebrow">People Also Ask</div>
+    <h2 class="sec-title">Frequently Asked Questions About Learning Python</h2>
+    <p class="sec-sub">The most common questions from beginners — answered honestly.</p>
+    <div class="faq-list" id="faqList"></div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="section" id="glossary">
+    <div class="sec-eyebrow">Reference Guide</div>
+    <h2 class="sec-title">Python Glossary — 24 Key Terms Explained</h2>
+    <p class="sec-sub">Bookmark this. When you encounter an unfamiliar term while coding, look it up here.</p>
+    <div class="glossary-grid" id="glossaryGrid"></div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="sec-eyebrow">Free Articles</div>
+    <h2 class="sec-title">Python Guides & Tutorials</h2>
+    <p class="sec-sub">Deep-dive articles on Python topics — from beginner fundamentals to real-world project walkthroughs.</p>
+    <div class="blog-grid" id="blogGrid"></div>
+  </section>
+
+  <!-- RELATED COURSES -->
+  <section class="section" id="related">
+    <div class="sec-eyebrow">Keep Learning</div>
+    <h2 class="sec-title">What to Learn After Python</h2>
+    <p class="sec-sub">Completed this course? These are the best next steps to level up your skills.</p>
+    <div class="related-grid" id="relatedGrid"></div>
+  </section>
+
+  <!-- MEGA CTA -->
+  <section class="section" id="finalcta">
+    <div class="mega-cta">
+      <div class="mc-badge">🆓 100% Free · No Sign-Up · Start Instantly</div>
+      <h2 class="mc-title">Start Learning Python Right Now</h2>
+      <p class="mc-sub">If you want to learn Python in 24 hours, you are in the right place. 24 lessons, hands-on code, 6 quizzes, free certificate — zero cost, zero sign-up.</p>
+      <div class="mc-features">
+        <div class="mc-feat">✅ 24 lessons</div>
+        <div class="mc-feat">✅ 30+ code examples</div>
+        <div class="mc-feat">✅ 6 quizzes</div>
+        <div class="mc-feat">✅ Free certificate</div>
+        <div class="mc-feat">✅ No sign-up</div>
+        <div class="mc-feat">✅ Mobile-friendly</div>
+        <div class="mc-feat">✅ Self-paced</div>
+        <div class="mc-feat">✅ Updated 2025</div>
+      </div>
+      <button class="mc-btn" onclick="startCourse()">🐍 Start Learning Python Free</button>
+      <div class="mc-proof">★★★★★ Rated 4.9/5 by 2,841 students · 31,400+ enrolled this month</div>
+    </div>
+  </section>
+
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-strip">
+  <div class="nl-title">🐍 Get Python Tips in Your Inbox</div>
+  <p class="nl-sub">One actionable Python tip every week. No spam, unsubscribe anytime.</p>
+  <div class="nl-form">
+    <input class="nl-input" type="email" placeholder="your@email.com">
+    <button class="nl-btn">Subscribe Free</button>
+  </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">🐍 PyLearn</div>
+        <div class="footer-tagline">Free Python education for everyone. No sign-up, no fees — just code and learn.</div>
+        <div style="font-size:.72rem;color:rgba(255,255,255,.3)">Part of the AILearn family</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Course</div>
+        <div class="footer-links">
+          <a href="#course">Curriculum</a>
+          <a href="#quiz">Quiz</a>
+          <a href="#snippets">Code Snippets</a>
+          <a href="#libraries">Libraries</a>
+          <a href="#glossary">Glossary</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <div class="footer-links">
+          <a href="#roadmap">Roadmap</a>
+          <a href="#careers">Careers</a>
+          <a href="#faq">FAQ</a>
+          <a href="#blog">Articles</a>
+          <a href="#related">Next Steps</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">AILearn Network</div>
+        <div class="footer-links">
+          <a href="#">AI Tools Course</a>
+          <a href="#">JavaScript in 24hrs</a>
+          <a href="#">Data Science Basics</a>
+          <a href="#">Excel Mastery</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 AILearn · PyLearn · Free Education Forever</span>
+      <div class="footer-legal">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LESSON READER OVERLAY -->
+<div class="overlay" id="lessonOverlay">
+  <div class="lesson-panel">
+    <div class="lp-header">
+      <div>
+        <div class="lp-module" id="lpModule"></div>
+        <div class="lp-title" id="lpTitle"></div>
+      </div>
+      <button class="lp-close" onclick="closeLesson()">✕</button>
+    </div>
+    <div class="lp-body" id="lpBody"></div>
+    <div class="lp-nav">
+      <button class="lp-nav-btn ghost" onclick="navLesson(-1)">← Previous</button>
+      <span style="font-size:.78rem;color:var(--gray);font-family:'Source Sans 3',sans-serif" id="lpCounter"></span>
+      <button class="lp-nav-btn" onclick="navLesson(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATE OVERLAY -->
+<div class="cert-overlay" id="certOverlay">
+  <div class="cert-wrap">
+    <div class="cert-emoji">🏆</div>
+    <div class="cert-title">Certificate of Completion</div>
+    <div class="cert-sub">This certifies that</div>
+    <input class="cert-name-input" id="certNameInput" placeholder="Type your name here..." />
+    <div class="cert-name-display" id="certNameDisplay"></div>
+    <div class="cert-course">has successfully completed<br><strong>Learn Python in 24 Hours</strong><br>PyLearn · AILearn · 2025</div>
+    <div style="font-size:.75rem;color:#9CA3AF;font-family:'Source Sans 3',sans-serif;margin-bottom:1rem">Issued: <span id="certDate"></span></div>
+    <div class="cert-btns">
+      <button class="cert-print" onclick="printCert()">🖨️ Print Certificate</button>
+      <button class="cert-close" onclick="document.getElementById('certOverlay').classList.remove('open')">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════
+// DATA
+// ═══════════════════════════════════
+
+const MODULES = [
+  {
+    id:1, emoji:'🐍', title:'Python Fundamentals',
+    sub:'4 lessons · ~4 hours · Beginner',
+    lessons:[
+      {title:'What is Python & Why Learn It?', dur:'25 min', tag:'Intro',
+       content:`<h3>What is Python?</h3><p>Python is a high-level, general-purpose programming language created by Guido van Rossum in 1991. It is designed to be readable, simple, and powerful — making it the #1 choice for beginners and professionals alike.</p><p>The name "Python" actually comes from Monty Python Flying Circus, a British comedy show. Fun fact!</p><h3>Why Python is the Best First Language</h3><ul><li>Reads almost like English — minimal punctuation, no semicolons</li><li>Runs on any operating system (Windows, Mac, Linux)</li><li>Used by Google, NASA, Netflix, Instagram, Spotify</li><li>Free and open-source — always will be</li><li>The #1 language in data science, AI, and automation</li></ul><h3>What Can You Build With Python?</h3><ul><li><strong>Web apps:</strong> Instagram, Pinterest, Dropbox all use Python backends</li><li><strong>Data analysis:</strong> Process millions of rows with Pandas</li><li><strong>AI & Machine Learning:</strong> TensorFlow, PyTorch are Python-first</li><li><strong>Automation:</strong> Schedule tasks, scrape websites, automate Excel</li><li><strong>Scripts:</strong> Rename files, send emails, read PDFs automatically</li></ul><div class="lp-code"><span class="kw">print</span>(<span class="str">"Hello, World! I am learning Python."</span>)
+<span class="cm"># Output: Hello, World! I am learning Python.</span></div><div class="lp-note">💡 Python uses indentation (spaces/tabs) instead of curly braces {} to structure code. This is what makes it so readable!</div>`},
+      {title:'Installing Python & Your First Program', dur:'30 min', tag:'Setup',
+       content:`<h3>Installing Python</h3><p>Python is free to download from python.org. Always install the latest stable version (3.11+ in 2025).</p><ul><li><strong>Windows:</strong> Download the installer from python.org. Check "Add Python to PATH" during install.</li><li><strong>Mac:</strong> Python 3 usually comes pre-installed. Run python3 --version in Terminal to check.</li><li><strong>Online option:</strong> Use replit.com or python.org/shell to code in your browser — no install needed!</li></ul><h3>Writing Your First Program</h3><p>Open a text editor (VS Code, Notepad++, or even Notepad), type the following, save as hello.py, and run it:</p><div class="lp-code"><span class="cm"># my first Python program</span>
+<span class="kw">print</span>(<span class="str">"Hello, World!"</span>)
+<span class="kw">print</span>(<span class="str">"I am learning Python!"</span>)
+<span class="kw">print</span>(<span class="num">2</span> + <span class="num">2</span>)  <span class="cm"># prints 4</span></div><h3>The print() Function</h3><p>print() is the most basic Python function. It displays output on the screen. You can print text (in quotes), numbers, and even calculations.</p><div class="lp-code"><span class="kw">print</span>(<span class="str">"text goes in quotes"</span>)
+<span class="kw">print</span>(<span class="num">42</span>)
+<span class="kw">print</span>(<span class="num">10</span> * <span class="num">5</span>)   <span class="cm"># prints 50</span>
+<span class="kw">print</span>(<span class="str">"Sum:"</span>, <span class="num">3</span> + <span class="num">7</span>)  <span class="cm"># prints Sum: 10</span></div><div class="lp-note">💡 Run your file from the terminal with: python hello.py (Windows) or python3 hello.py (Mac/Linux)</div>`},
+      {title:'Variables, Data Types & Basic Operations', dur:'40 min', tag:'Core',
+       content:`<h3>Variables</h3><p>A variable is a named container that stores a value. In Python, you create a variable simply by naming it and assigning a value with =.</p><div class="lp-code"><span class="fn">name</span> = <span class="str">"Alice"</span>
+<span class="fn">age</span> = <span class="num">25</span>
+<span class="fn">height</span> = <span class="num">1.72</span>
+<span class="fn">is_student</span> = <span class="kw">True</span>
+
+<span class="kw">print</span>(<span class="fn">name</span>, <span class="str">"is"</span>, <span class="fn">age</span>, <span class="str">"years old"</span>)</div><h3>Data Types</h3><ul><li><strong>str</strong> — text: "hello", "Python", "123"</li><li><strong>int</strong> — whole numbers: 5, -3, 1000</li><li><strong>float</strong> — decimal numbers: 3.14, -0.5</li><li><strong>bool</strong> — True or False</li><li><strong>list</strong> — ordered collection: [1, 2, 3]</li><li><strong>dict</strong> — key-value pairs: {"name": "Alice"}</li></ul><h3>Basic Operations</h3><div class="lp-code"><span class="cm"># Math</span>
+<span class="kw">print</span>(<span class="num">10</span> + <span class="num">3</span>)   <span class="cm"># 13</span>
+<span class="kw">print</span>(<span class="num">10</span> - <span class="num">3</span>)   <span class="cm"># 7</span>
+<span class="kw">print</span>(<span class="num">10</span> * <span class="num">3</span>)   <span class="cm"># 30</span>
+<span class="kw">print</span>(<span class="num">10</span> / <span class="num">3</span>)   <span class="cm"># 3.333...</span>
+<span class="kw">print</span>(<span class="num">10</span> // <span class="num">3</span>)  <span class="cm"># 3 (floor division)</span>
+<span class="kw">print</span>(<span class="num">10</span> % <span class="num">3</span>)   <span class="cm"># 1 (remainder)</span>
+<span class="kw">print</span>(<span class="num">2</span> ** <span class="num">10</span>)  <span class="cm"># 1024 (power)</span></div><div class="lp-note">💡 Use type() to check what type a variable is: print(type(age)) → &lt;class 'int'&gt;</div>`},
+      {title:'User Input & String Formatting', dur:'35 min', tag:'Core',
+       content:`<h3>Getting User Input</h3><p>The input() function pauses your program and waits for the user to type something. It always returns a string.</p><div class="lp-code"><span class="fn">name</span> = <span class="fn">input</span>(<span class="str">"What is your name? "</span>)
+<span class="kw">print</span>(<span class="str">"Hello,"</span>, <span class="fn">name</span>)
+
+<span class="fn">age</span> = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"How old are you? "</span>))
+<span class="kw">print</span>(<span class="str">"Next year you'll be"</span>, <span class="fn">age</span> + <span class="num">1</span>)</div><h3>f-Strings (The Modern Way to Format)</h3><p>f-strings let you embed variables directly into strings. Put f before the opening quote, then use {} around variable names.</p><div class="lp-code"><span class="fn">name</span> = <span class="str">"Alice"</span>
+<span class="fn">age</span> = <span class="num">25</span>
+<span class="fn">city</span> = <span class="str">"London"</span>
+
+<span class="kw">print</span>(<span class="str">f"Hi, I am {name}, {age} years old, from {city}."</span>)
+<span class="kw">print</span>(<span class="str">f"In 5 years I'll be {age + 5}."</span>)
+<span class="kw">print</span>(<span class="str">f"Pi is approximately {3.14159:.2f}"</span>)</div><div class="lp-note">💡 f-strings were introduced in Python 3.6 and are now the standard. Always prefer f-strings over .format() or % formatting.</div>`},
+    ]
+  },
+  {
+    id:2, emoji:'🔄', title:'Control Flow & Logic',
+    sub:'4 lessons · ~4 hours · Beginner',
+    lessons:[
+      {title:'If, Elif & Else — Making Decisions', dur:'35 min', tag:'Core',
+       content:`<h3>Conditional Statements</h3><p>if/elif/else let your program make decisions based on conditions. The code inside runs only when the condition is True.</p><div class="lp-code"><span class="fn">temperature</span> = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"Temperature: "</span>))
+
+<span class="kw">if</span> <span class="fn">temperature</span> > <span class="num">30</span>:
+    <span class="kw">print</span>(<span class="str">"It is hot! Wear light clothes."</span>)
+<span class="kw">elif</span> <span class="fn">temperature</span> > <span class="num">15</span>:
+    <span class="kw">print</span>(<span class="str">"Nice weather. Bring a light jacket."</span>)
+<span class="kw">elif</span> <span class="fn">temperature</span> > <span class="num">0</span>:
+    <span class="kw">print</span>(<span class="str">"Cold. Wear a warm coat."</span>)
+<span class="kw">else</span>:
+    <span class="kw">print</span>(<span class="str">"Freezing! Stay indoors!"</span>)</div><h3>Comparison Operators</h3><ul><li>== equal to</li><li>!= not equal</li><li>&gt; greater than / &lt; less than</li><li>&gt;= greater or equal / &lt;= less or equal</li></ul><h3>Logical Operators</h3><div class="lp-code"><span class="fn">age</span> = <span class="num">20</span>
+<span class="fn">has_id</span> = <span class="kw">True</span>
+
+<span class="kw">if</span> <span class="fn">age</span> >= <span class="num">18</span> <span class="kw">and</span> <span class="fn">has_id</span>:
+    <span class="kw">print</span>(<span class="str">"Entry allowed."</span>)
+<span class="kw">else</span>:
+    <span class="kw">print</span>(<span class="str">"Entry denied."</span>)</div>`},
+      {title:'For Loops — Repeating Actions', dur:'40 min', tag:'Core',
+       content:`<h3>For Loops</h3><p>A for loop runs a block of code once for each item in a sequence. It is one of the most powerful tools in Python.</p><div class="lp-code"><span class="cm"># Loop through a list</span>
+<span class="fn">fruits</span> = [<span class="str">"apple"</span>, <span class="str">"banana"</span>, <span class="str">"cherry"</span>]
+<span class="kw">for</span> <span class="fn">fruit</span> <span class="kw">in</span> <span class="fn">fruits</span>:
+    <span class="kw">print</span>(<span class="str">f"I like {fruit}"</span>)
+
+<span class="cm"># Loop through numbers with range()</span>
+<span class="kw">for</span> <span class="fn">i</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">6</span>):
+    <span class="kw">print</span>(<span class="str">f"{i} x 7 = {i * 7}"</span>)
+
+<span class="cm"># Loop with index using enumerate()</span>
+<span class="kw">for</span> <span class="fn">i</span>, <span class="fn">fruit</span> <span class="kw">in</span> <span class="fn">enumerate</span>(<span class="fn">fruits</span>):
+    <span class="kw">print</span>(<span class="str">f"Item {i}: {fruit}"</span>)</div><h3>List Comprehensions</h3><p>A concise, Pythonic way to create lists in one line:</p><div class="lp-code"><span class="fn">squares</span> = [<span class="fn">x</span>**<span class="num">2</span> <span class="kw">for</span> <span class="fn">x</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">10</span>)]
+<span class="fn">evens</span> = [<span class="fn">x</span> <span class="kw">for</span> <span class="fn">x</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">20</span>) <span class="kw">if</span> <span class="fn">x</span> % <span class="num">2</span> == <span class="num">0</span>]
+<span class="kw">print</span>(<span class="fn">squares</span>)  <span class="cm"># [0, 1, 4, 9, 16, ...]</span></div><div class="lp-note">💡 range(5) gives 0,1,2,3,4. range(1,6) gives 1,2,3,4,5. range(0,10,2) gives 0,2,4,6,8.</div>`},
+      {title:'While Loops & Loop Control', dur:'35 min', tag:'Core',
+       content:`<h3>While Loops</h3><p>A while loop keeps running as long as a condition is True. Use it when you do not know in advance how many times to loop.</p><div class="lp-code"><span class="fn">count</span> = <span class="num">0</span>
+<span class="kw">while</span> <span class="fn">count</span> < <span class="num">5</span>:
+    <span class="kw">print</span>(<span class="str">f"Count: {count}"</span>)
+    <span class="fn">count</span> += <span class="num">1</span>
+
+<span class="cm"># Password checker with while</span>
+<span class="fn">password</span> = <span class="str">""</span>
+<span class="kw">while</span> <span class="fn">password</span> != <span class="str">"python123"</span>:
+    <span class="fn">password</span> = <span class="fn">input</span>(<span class="str">"Enter password: "</span>)
+<span class="kw">print</span>(<span class="str">"Access granted!"</span>)</div><h3>break and continue</h3><div class="lp-code"><span class="cm"># break exits the loop early</span>
+<span class="kw">for</span> <span class="fn">n</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">100</span>):
+    <span class="kw">if</span> <span class="fn">n</span> == <span class="num">5</span>:
+        <span class="kw">break</span>
+    <span class="kw">print</span>(<span class="fn">n</span>)  <span class="cm"># prints 0 1 2 3 4</span>
+
+<span class="cm"># continue skips to next iteration</span>
+<span class="kw">for</span> <span class="fn">n</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">10</span>):
+    <span class="kw">if</span> <span class="fn">n</span> % <span class="num">2</span> == <span class="num">0</span>:
+        <span class="kw">continue</span>
+    <span class="kw">print</span>(<span class="fn">n</span>)  <span class="cm"># prints odd numbers</span></div>`},
+      {title:'Functions — Writing Reusable Code', dur:'45 min', tag:'Core',
+       content:`<h3>Defining Functions</h3><p>A function is a reusable block of code that performs a specific task. Use def to define one, then call it by name.</p><div class="lp-code"><span class="kw">def</span> <span class="fn">greet</span>(<span class="fn">name</span>):
+    <span class="kw">print</span>(<span class="str">f"Hello, {name}!"</span>)
+
+<span class="fn">greet</span>(<span class="str">"Alice"</span>)
+<span class="fn">greet</span>(<span class="str">"Bob"</span>)</div><h3>Parameters, Arguments & Return Values</h3><div class="lp-code"><span class="kw">def</span> <span class="fn">add</span>(<span class="fn">a</span>, <span class="fn">b</span>):
+    <span class="kw">return</span> <span class="fn">a</span> + <span class="fn">b</span>
+
+<span class="fn">result</span> = <span class="fn">add</span>(<span class="num">5</span>, <span class="num">3</span>)
+<span class="kw">print</span>(<span class="fn">result</span>)  <span class="cm"># 8</span>
+
+<span class="cm"># Default parameter values</span>
+<span class="kw">def</span> <span class="fn">power</span>(<span class="fn">base</span>, <span class="fn">exp</span>=<span class="num">2</span>):
+    <span class="kw">return</span> <span class="fn">base</span> ** <span class="fn">exp</span>
+
+<span class="kw">print</span>(<span class="fn">power</span>(<span class="num">3</span>))     <span class="cm"># 9 (uses default exp=2)</span>
+<span class="kw">print</span>(<span class="fn">power</span>(<span class="num">2</span>, <span class="num">8</span>))  <span class="cm"># 256</span></div><div class="lp-note">💡 Keep functions small — a function should do ONE thing well. This is called the Single Responsibility Principle.</div>`},
+    ]
+  },
+  {
+    id:3, emoji:'📋', title:'Data Structures',
+    sub:'4 lessons · ~4 hours · Beginner',
+    lessons:[
+      {title:'Lists — The Most Used Data Structure', dur:'40 min', tag:'Core', content:`<h3>What is a List?</h3><p>A list is an ordered, mutable collection of items. It can hold any mix of data types and you can change it after creation.</p><div class="lp-code"><span class="fn">numbers</span> = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span>]
+<span class="fn">mixed</span> = [<span class="str">"hello"</span>, <span class="num">42</span>, <span class="kw">True</span>, <span class="num">3.14</span>]
+
+<span class="cm"># Accessing items (0-indexed)</span>
+<span class="kw">print</span>(<span class="fn">numbers</span>[<span class="num">0</span>])   <span class="cm"># 1 (first item)</span>
+<span class="kw">print</span>(<span class="fn">numbers</span>[-<span class="num">1</span>])  <span class="cm"># 5 (last item)</span>
+
+<span class="cm"># Slicing</span>
+<span class="kw">print</span>(<span class="fn">numbers</span>[<span class="num">1</span>:<span class="num">4</span>])  <span class="cm"># [2, 3, 4]</span>
+
+<span class="cm"># Common methods</span>
+<span class="fn">numbers</span>.<span class="fn">append</span>(<span class="num">6</span>)    <span class="cm"># add to end</span>
+<span class="fn">numbers</span>.<span class="fn">remove</span>(<span class="num">3</span>)    <span class="cm"># remove by value</span>
+<span class="fn">numbers</span>.<span class="fn">sort</span>()       <span class="cm"># sort in place</span>
+<span class="kw">print</span>(<span class="fn">len</span>(<span class="fn">numbers</span>))  <span class="cm"># number of items</span></div>`},
+      {title:'Dictionaries — Key-Value Storage', dur:'40 min', tag:'Core', content:`<h3>What is a Dictionary?</h3><p>A dictionary stores data as key-value pairs. Unlike lists (which use index numbers), dictionaries let you look up values by meaningful keys.</p><div class="lp-code"><span class="fn">person</span> = {
+    <span class="str">"name"</span>: <span class="str">"Alice"</span>,
+    <span class="str">"age"</span>: <span class="num">25</span>,
+    <span class="str">"city"</span>: <span class="str">"London"</span>,
+    <span class="str">"is_student"</span>: <span class="kw">True</span>
+}
+
+<span class="kw">print</span>(<span class="fn">person</span>[<span class="str">"name"</span>])           <span class="cm"># Alice</span>
+<span class="fn">person</span>[<span class="str">"email"</span>] = <span class="str">"a@b.com"</span>    <span class="cm"># add key</span>
+<span class="kw">del</span> <span class="fn">person</span>[<span class="str">"is_student"</span>]        <span class="cm"># remove key</span>
+
+<span class="cm"># Loop through a dict</span>
+<span class="kw">for</span> <span class="fn">key</span>, <span class="fn">value</span> <span class="kw">in</span> <span class="fn">person</span>.<span class="fn">items</span>():
+    <span class="kw">print</span>(<span class="str">f"{key}: {value}"</span>)</div>`},
+      {title:'Tuples & Sets', dur:'30 min', tag:'Core', content:`<h3>Tuples</h3><p>A tuple is like a list but immutable — you cannot change it after creation. Use tuples for data that should not change.</p><div class="lp-code"><span class="fn">coordinates</span> = (<span class="num">51.5</span>, -<span class="num">0.12</span>)  <span class="cm"># latitude, longitude</span>
+<span class="fn">rgb</span> = (<span class="num">255</span>, <span class="num">128</span>, <span class="num">0</span>)
+
+<span class="cm"># Tuple unpacking</span>
+<span class="fn">lat</span>, <span class="fn">lon</span> = <span class="fn">coordinates</span>
+<span class="fn">r</span>, <span class="fn">g</span>, <span class="fn">b</span> = <span class="fn">rgb</span></div><h3>Sets</h3><p>A set is an unordered collection with no duplicates. Perfect for membership testing and removing duplicates.</p><div class="lp-code"><span class="fn">unique</span> = {<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">2</span>, <span class="num">1</span>}
+<span class="kw">print</span>(<span class="fn">unique</span>)  <span class="cm"># {1, 2, 3}</span>
+
+<span class="cm"># Remove duplicates from list</span>
+<span class="fn">dupes</span> = [<span class="num">1</span>,<span class="num">2</span>,<span class="num">2</span>,<span class="num">3</span>,<span class="num">3</span>,<span class="num">3</span>]
+<span class="fn">clean</span> = <span class="fn">list</span>(<span class="fn">set</span>(<span class="fn">dupes</span>))  <span class="cm"># [1, 2, 3]</span></div>`},
+      {title:'Strings in Depth', dur:'40 min', tag:'Core', content:`<h3>String Methods</h3><p>Strings are one of the most common data types. Python has dozens of built-in methods to manipulate them.</p><div class="lp-code"><span class="fn">text</span> = <span class="str">"  Hello, Python World!  "</span>
+
+<span class="kw">print</span>(<span class="fn">text</span>.<span class="fn">strip</span>())       <span class="cm"># remove spaces</span>
+<span class="kw">print</span>(<span class="fn">text</span>.<span class="fn">upper</span>())       <span class="cm"># HELLO, PYTHON WORLD!</span>
+<span class="kw">print</span>(<span class="fn">text</span>.<span class="fn">lower</span>())       <span class="cm"># hello, python world!</span>
+<span class="kw">print</span>(<span class="fn">text</span>.<span class="fn">replace</span>(<span class="str">"Python"</span>, <span class="str">"Amazing"</span>))
+<span class="kw">print</span>(<span class="fn">text</span>.<span class="fn">split</span>(<span class="str">","</span>))    <span class="cm"># ["  Hello", " Python World!  "]</span>
+<span class="kw">print</span>(<span class="str">"Python"</span> <span class="kw">in</span> <span class="fn">text</span>)   <span class="cm"># True</span>
+<span class="kw">print</span>(<span class="fn">len</span>(<span class="fn">text</span>.<span class="fn">strip</span>()))  <span class="cm"># 22</span></div><div class="lp-note">💡 Strings are immutable — methods return a new string, they do not change the original.</div>`},
+    ]
+  },
+  {
+    id:4, emoji:'📁', title:'Files, Errors & Modules',
+    sub:'4 lessons · ~4 hours · Intermediate',
+    lessons:[
+      {title:'Reading & Writing Files', dur:'40 min', tag:'Practical', content:`<h3>Opening Files</h3><p>Python can read and write files on your computer. Always use the with statement — it automatically closes the file when done.</p><div class="lp-code"><span class="cm"># Writing to a file</span>
+<span class="kw">with</span> <span class="fn">open</span>(<span class="str">"notes.txt"</span>, <span class="str">"w"</span>) <span class="kw">as</span> <span class="fn">f</span>:
+    <span class="fn">f</span>.<span class="fn">write</span>(<span class="str">"Hello from Python!\n"</span>)
+    <span class="fn">f</span>.<span class="fn">write</span>(<span class="str">"This is my file."</span>)
+
+<span class="cm"># Reading a file</span>
+<span class="kw">with</span> <span class="fn">open</span>(<span class="str">"notes.txt"</span>, <span class="str">"r"</span>) <span class="kw">as</span> <span class="fn">f</span>:
+    <span class="fn">content</span> = <span class="fn">f</span>.<span class="fn">read</span>()
+    <span class="kw">print</span>(<span class="fn">content</span>)
+
+<span class="cm"># Read line by line</span>
+<span class="kw">with</span> <span class="fn">open</span>(<span class="str">"notes.txt"</span>) <span class="kw">as</span> <span class="fn">f</span>:
+    <span class="kw">for</span> <span class="fn">line</span> <span class="kw">in</span> <span class="fn">f</span>:
+        <span class="kw">print</span>(<span class="fn">line</span>.<span class="fn">strip</span>())</div><h3>File Modes</h3><ul><li>"r" — read (default)</li><li>"w" — write (overwrites existing)</li><li>"a" — append (adds to existing)</li><li>"r+" — read and write</li></ul>`},
+      {title:'Error Handling with Try/Except', dur:'35 min', tag:'Practical', content:`<h3>Why Handle Errors?</h3><p>Programs crash when something unexpected happens — a file does not exist, a user enters text instead of a number, etc. try/except lets you handle these gracefully.</p><div class="lp-code"><span class="cm"># Without error handling - CRASHES</span>
+<span class="fn">number</span> = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"Enter a number: "</span>))
+
+<span class="cm"># With error handling - SAFE</span>
+<span class="kw">try</span>:
+    <span class="fn">number</span> = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"Enter a number: "</span>))
+    <span class="kw">print</span>(<span class="str">f"Double: {number * 2}"</span>)
+<span class="kw">except</span> <span class="cls">ValueError</span>:
+    <span class="kw">print</span>(<span class="str">"That is not a valid number!"</span>)
+<span class="kw">except</span> <span class="cls">Exception</span> <span class="kw">as</span> <span class="fn">e</span>:
+    <span class="kw">print</span>(<span class="str">f"Something went wrong: {e}"</span>)
+<span class="kw">finally</span>:
+    <span class="kw">print</span>(<span class="str">"Program finished."</span>)</div><div class="lp-note">💡 The finally block always runs, whether an error occurred or not. Use it for cleanup like closing files or database connections.</div>`},
+      {title:'Python Modules & pip', dur:'40 min', tag:'Practical', content:`<h3>What is a Module?</h3><p>A module is a file containing Python code (functions, classes, variables) that you can import and reuse. Python comes with hundreds of built-in modules.</p><div class="lp-code"><span class="cm"># Import built-in modules</span>
+<span class="kw">import</span> <span class="fn">math</span>
+<span class="kw">import</span> <span class="fn">random</span>
+<span class="kw">import</span> <span class="fn">datetime</span>
+
+<span class="kw">print</span>(<span class="fn">math</span>.<span class="fn">sqrt</span>(<span class="num">144</span>))      <span class="cm"># 12.0</span>
+<span class="kw">print</span>(<span class="fn">math</span>.<span class="fn">pi</span>)             <span class="cm"># 3.141592...</span>
+<span class="kw">print</span>(<span class="fn">random</span>.<span class="fn">randint</span>(<span class="num">1</span>, <span class="num">6</span>)) <span class="cm"># dice roll!</span>
+<span class="kw">print</span>(<span class="fn">datetime</span>.<span class="fn">date</span>.<span class="fn">today</span>())</div><h3>Installing Packages with pip</h3><p>pip is Python package manager. It lets you install thousands of third-party libraries in seconds.</p><div class="lp-code"><span class="cm"># In your terminal/command prompt:</span>
+pip install requests
+pip install pandas
+pip install flask
+pip list                  <span class="cm"># see installed packages</span>
+pip install -r requirements.txt  <span class="cm"># install from file</span></div>`},
+      {title:'Object-Oriented Programming Basics', dur:'50 min', tag:'Intermediate', content:`<h3>What is OOP?</h3><p>Object-Oriented Programming (OOP) organizes code around "objects" — bundles of data and functions. A class is a blueprint; an object is an instance of that blueprint.</p><div class="lp-code"><span class="kw">class</span> <span class="cls">Dog</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="fn">self</span>, <span class="fn">name</span>, <span class="fn">breed</span>):
+        <span class="fn">self</span>.<span class="fn">name</span> = <span class="fn">name</span>
+        <span class="fn">self</span>.<span class="fn">breed</span> = <span class="fn">breed</span>
+
+    <span class="kw">def</span> <span class="fn">bark</span>(<span class="fn">self</span>):
+        <span class="kw">return</span> <span class="str">f"{self.name} says: Woof!"</span>
+
+    <span class="kw">def</span> <span class="fn">info</span>(<span class="fn">self</span>):
+        <span class="kw">return</span> <span class="str">f"{self.name} is a {self.breed}"</span>
+
+<span class="fn">rex</span> = <span class="cls">Dog</span>(<span class="str">"Rex"</span>, <span class="str">"Labrador"</span>)
+<span class="fn">luna</span> = <span class="cls">Dog</span>(<span class="str">"Luna"</span>, <span class="str">"Husky"</span>)
+
+<span class="kw">print</span>(<span class="fn">rex</span>.<span class="fn">bark</span>())   <span class="cm"># Rex says: Woof!</span>
+<span class="kw">print</span>(<span class="fn">luna</span>.<span class="fn">info</span>())  <span class="cm"># Luna is a Husky</span></div><div class="lp-note">💡 __init__ is the constructor — it runs automatically when you create a new object. self refers to the current instance.</div>`},
+    ]
+  },
+  {
+    id:5, emoji:'🌐', title:'Real-World Python',
+    sub:'4 lessons · ~4 hours · Intermediate',
+    lessons:[
+      {title:'Web Scraping with BeautifulSoup', dur:'50 min', tag:'Project', content:`<h3>What is Web Scraping?</h3><p>Web scraping is extracting data from websites automatically. Python requests + BeautifulSoup combo is the most beginner-friendly way to do it.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">requests</span>
+<span class="kw">from</span> <span class="fn">bs4</span> <span class="kw">import</span> <span class="cls">BeautifulSoup</span>
+
+<span class="cm"># Fetch a webpage</span>
+<span class="fn">url</span> = <span class="str">"https://quotes.toscrape.com"</span>
+<span class="fn">response</span> = <span class="fn">requests</span>.<span class="fn">get</span>(<span class="fn">url</span>)
+<span class="fn">soup</span> = <span class="cls">BeautifulSoup</span>(<span class="fn">response</span>.<span class="fn">text</span>, <span class="str">"html.parser"</span>)
+
+<span class="cm"># Extract all quotes</span>
+<span class="fn">quotes</span> = <span class="fn">soup</span>.<span class="fn">find_all</span>(<span class="str">"span"</span>, <span class="fn">class_</span>=<span class="str">"text"</span>)
+<span class="kw">for</span> <span class="fn">q</span> <span class="kw">in</span> <span class="fn">quotes</span>:
+    <span class="kw">print</span>(<span class="fn">q</span>.<span class="fn">get_text</span>())</div><div class="lp-note">⚠️ Always check a website's robots.txt and terms of service before scraping. Only scrape data that is publicly available and legally permitted.</div>`},
+      {title:'Working with APIs', dur:'45 min', tag:'Project', content:`<h3>What is an API?</h3><p>An API (Application Programming Interface) lets your Python program communicate with external services — weather data, news, currency rates, etc.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">requests</span>
+
+<span class="cm"># Free weather API (no key needed for demo)</span>
+<span class="fn">city</span> = <span class="str">"London"</span>
+<span class="fn">url</span> = <span class="str">f"https://wttr.in/{city}?format=j1"</span>
+<span class="fn">response</span> = <span class="fn">requests</span>.<span class="fn">get</span>(<span class="fn">url</span>)
+<span class="fn">data</span> = <span class="fn">response</span>.<span class="fn">json</span>()
+
+<span class="fn">temp</span> = <span class="fn">data</span>[<span class="str">"current_condition"</span>][<span class="num">0</span>][<span class="str">"temp_C"</span>]
+<span class="kw">print</span>(<span class="str">f"Temperature in {city}: {temp}°C"</span>)</div><div class="lp-note">💡 Most APIs return JSON data. Use response.json() to convert it to a Python dictionary automatically.</div>`},
+      {title:'Automation with Python', dur:'50 min', tag:'Project', content:`<h3>Automating Everyday Tasks</h3><p>Python shines at automation — repetitive tasks that would take hours manually can be done in seconds with a script.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">os</span>
+<span class="kw">import</span> <span class="fn">shutil</span>
+
+<span class="cm"># Auto-organise files by extension</span>
+<span class="fn">folder</span> = <span class="str">"C:/Users/You/Downloads"</span>
+<span class="fn">categories</span> = {
+    <span class="str">"Images"</span>: [<span class="str">".jpg"</span>, <span class="str">".png"</span>, <span class="str">".gif"</span>],
+    <span class="str">"Documents"</span>: [<span class="str">".pdf"</span>, <span class="str">".docx"</span>, <span class="str">".txt"</span>],
+    <span class="str">"Videos"</span>: [<span class="str">".mp4"</span>, <span class="str">".avi"</span>, <span class="str">".mkv"</span>],
+}
+
+<span class="kw">for</span> <span class="fn">filename</span> <span class="kw">in</span> <span class="fn">os</span>.<span class="fn">listdir</span>(<span class="fn">folder</span>):
+    <span class="fn">ext</span> = <span class="fn">os</span>.<span class="fn">path</span>.<span class="fn">splitext</span>(<span class="fn">filename</span>)[<span class="num">1</span>].<span class="fn">lower</span>()
+    <span class="kw">for</span> <span class="fn">cat</span>, <span class="fn">exts</span> <span class="kw">in</span> <span class="fn">categories</span>.<span class="fn">items</span>():
+        <span class="kw">if</span> <span class="fn">ext</span> <span class="kw">in</span> <span class="fn">exts</span>:
+            <span class="fn">dest</span> = <span class="fn">os</span>.<span class="fn">path</span>.<span class="fn">join</span>(<span class="fn">folder</span>, <span class="fn">cat</span>)
+            <span class="fn">os</span>.<span class="fn">makedirs</span>(<span class="fn">dest</span>, <span class="fn">exist_ok</span>=<span class="kw">True</span>)
+            <span class="fn">shutil</span>.<span class="fn">move</span>(<span class="fn">os</span>.<span class="fn">path</span>.<span class="fn">join</span>(<span class="fn">folder</span>, <span class="fn">filename</span>), <span class="fn">dest</span>)</div>`},
+      {title:'Data Analysis with Pandas', dur:'55 min', tag:'Project', content:`<h3>What is Pandas?</h3><p>Pandas is the go-to library for data analysis in Python. It lets you load, clean, filter, and analyze tabular data (like Excel spreadsheets) with just a few lines of code.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">pandas</span> <span class="kw">as</span> <span class="fn">pd</span>
+
+<span class="cm"># Load a CSV file</span>
+<span class="fn">df</span> = <span class="fn">pd</span>.<span class="fn">read_csv</span>(<span class="str">"sales.csv"</span>)
+
+<span class="cm"># Explore the data</span>
+<span class="kw">print</span>(<span class="fn">df</span>.<span class="fn">head</span>())         <span class="cm"># first 5 rows</span>
+<span class="kw">print</span>(<span class="fn">df</span>.<span class="fn">describe</span>())     <span class="cm"># statistics</span>
+<span class="kw">print</span>(<span class="fn">df</span>.<span class="fn">columns</span>)        <span class="cm"># column names</span>
+
+<span class="cm"># Filter & analyze</span>
+<span class="fn">top_sales</span> = <span class="fn">df</span>[<span class="fn">df</span>[<span class="str">"revenue"</span>] > <span class="num">10000</span>]
+<span class="fn">monthly</span> = <span class="fn">df</span>.<span class="fn">groupby</span>(<span class="str">"month"</span>)[<span class="str">"revenue"</span>].<span class="fn">sum</span>()
+<span class="fn">df</span>.<span class="fn">to_csv</span>(<span class="str">"output.csv"</span>, <span class="fn">index</span>=<span class="kw">False</span>)</div>`},
+    ]
+  },
+  {
+    id:6, emoji:'🚀', title:'Projects & Next Steps',
+    sub:'4 lessons · ~4 hours · Intermediate',
+    lessons:[
+      {title:'Build a To-Do List App', dur:'60 min', tag:'Project', content:`<h3>Your First Complete Python App</h3><p>In this lesson we build a fully functional command-line to-do list app that saves tasks to a file. It uses everything you've learned: variables, lists, loops, functions, and file I/O.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">json</span>
+<span class="kw">import</span> <span class="fn">os</span>
+
+<span class="fn">FILE</span> = <span class="str">"todos.json"</span>
+
+<span class="kw">def</span> <span class="fn">load_tasks</span>():
+    <span class="kw">if</span> <span class="fn">os</span>.<span class="fn">path</span>.<span class="fn">exists</span>(<span class="fn">FILE</span>):
+        <span class="kw">with</span> <span class="fn">open</span>(<span class="fn">FILE</span>) <span class="kw">as</span> <span class="fn">f</span>:
+            <span class="kw">return</span> <span class="fn">json</span>.<span class="fn">load</span>(<span class="fn">f</span>)
+    <span class="kw">return</span> []
+
+<span class="kw">def</span> <span class="fn">save_tasks</span>(<span class="fn">tasks</span>):
+    <span class="kw">with</span> <span class="fn">open</span>(<span class="fn">FILE</span>, <span class="str">"w"</span>) <span class="kw">as</span> <span class="fn">f</span>:
+        <span class="fn">json</span>.<span class="fn">dump</span>(<span class="fn">tasks</span>, <span class="fn">f</span>)
+
+<span class="kw">def</span> <span class="fn">main</span>():
+    <span class="fn">tasks</span> = <span class="fn">load_tasks</span>()
+    <span class="kw">while</span> <span class="kw">True</span>:
+        <span class="kw">print</span>(<span class="str">"\n1. Add  2. View  3. Done  4. Quit"</span>)
+        <span class="fn">choice</span> = <span class="fn">input</span>(<span class="str">"Choice: "</span>)
+        <span class="kw">if</span> <span class="fn">choice</span> == <span class="str">"1"</span>:
+            <span class="fn">tasks</span>.<span class="fn">append</span>({<span class="str">"task"</span>: <span class="fn">input</span>(<span class="str">"Task: "</span>), <span class="str">"done"</span>: <span class="kw">False</span>})
+            <span class="fn">save_tasks</span>(<span class="fn">tasks</span>)
+        <span class="kw">elif</span> <span class="fn">choice</span> == <span class="str">"4"</span>:
+            <span class="kw">break</span>
+
+<span class="fn">main</span>()</div>`},
+      {title:'Number Guessing Game', dur:'40 min', tag:'Project', content:`<h3>Classic Beginner Project</h3><p>Build a complete game where the computer picks a random number and the user tries to guess it. You'll practice loops, conditionals, and user interaction.</p><div class="lp-code"><span class="kw">import</span> <span class="fn">random</span>
+
+<span class="kw">def</span> <span class="fn">play_game</span>():
+    <span class="fn">secret</span> = <span class="fn">random</span>.<span class="fn">randint</span>(<span class="num">1</span>, <span class="num">100</span>)
+    <span class="fn">attempts</span> = <span class="num">0</span>
+    <span class="fn">max_attempts</span> = <span class="num">7</span>
+
+    <span class="kw">print</span>(<span class="str">"Guess my number (1-100). You have 7 tries!"</span>)
+
+    <span class="kw">while</span> <span class="fn">attempts</span> < <span class="fn">max_attempts</span>:
+        <span class="kw">try</span>:
+            <span class="fn">guess</span> = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">f"\nAttempt {attempts+1}: "</span>))
+            <span class="fn">attempts</span> += <span class="num">1</span>
+            <span class="kw">if</span> <span class="fn">guess</span> == <span class="fn">secret</span>:
+                <span class="kw">print</span>(<span class="str">f"Correct! You got it in {attempts} tries!"</span>)
+                <span class="kw">return</span>
+            <span class="kw">elif</span> <span class="fn">guess</span> < <span class="fn">secret</span>:
+                <span class="kw">print</span>(<span class="str">"Too low! Go higher."</span>)
+            <span class="kw">else</span>:
+                <span class="kw">print</span>(<span class="str">"Too high! Go lower."</span>)
+        <span class="kw">except</span> <span class="cls">ValueError</span>:
+            <span class="kw">print</span>(<span class="str">"Numbers only please!"</span>)
+
+    <span class="kw">print</span>(<span class="str">f"Game over! The number was {secret}."</span>)
+
+<span class="fn">play_game</span>()</div>`},
+      {title:'Simple Web App with Flask', dur:'60 min', tag:'Advanced', content:`<h3>Your First Web App</h3><p>Flask is a lightweight web framework that lets you turn your Python scripts into web applications. It is the perfect introduction to web development with Python.</p><div class="lp-code"><span class="kw">from</span> <span class="fn">flask</span> <span class="kw">import</span> <span class="cls">Flask</span>, <span class="fn">render_template_string</span>, <span class="fn">request</span>
+
+<span class="fn">app</span> = <span class="cls">Flask</span>(<span class="fn">__name__</span>)
+
+<span class="fn">HTML</span> = <span class="str">"""
+&lt;h1&gt;Hello from Flask!&lt;/h1&gt;
+&lt;form method="post"&gt;
+  &lt;input name="name" placeholder="Your name"&gt;
+  &lt;button&gt;Greet me!&lt;/button&gt;
+&lt;/form&gt;
+{{ message }}
+"""</span>
+
+<span class="fn">@app</span>.<span class="fn">route</span>(<span class="str">"/"</span>, <span class="fn">methods</span>=[<span class="str">"GET"</span>, <span class="str">"POST"</span>])
+<span class="kw">def</span> <span class="fn">home</span>():
+    <span class="fn">msg</span> = <span class="str">""</span>
+    <span class="kw">if</span> <span class="fn">request</span>.<span class="fn">method</span> == <span class="str">"POST"</span>:
+        <span class="fn">name</span> = <span class="fn">request</span>.<span class="fn">form</span>[<span class="str">"name"</span>]
+        <span class="fn">msg</span> = <span class="str">f"&lt;p&gt;Hello, {name}!&lt;/p&gt;"</span>
+    <span class="kw">return</span> <span class="fn">render_template_string</span>(<span class="fn">HTML</span>, <span class="fn">message</span>=<span class="fn">msg</span>)
+
+<span class="kw">if</span> <span class="fn">__name__</span> == <span class="str">"__main__"</span>:
+    <span class="fn">app</span>.<span class="fn">run</span>(<span class="fn">debug</span>=<span class="kw">True</span>)</div>`},
+      {title:'Python Career Roadmap & Next Steps', dur:'30 min', tag:'Career', content:`<h3>Congratulations! 🎉</h3><p>You've completed Learn Python in 24 Hours! You now have a solid foundation in Python — variables, loops, functions, data structures, files, OOP, and real projects.</p><h3>What to Learn Next</h3><ul><li><strong>Data Science path:</strong> NumPy → Pandas → Matplotlib → Scikit-learn</li><li><strong>Web development path:</strong> Flask → Django → REST APIs → Deployment</li><li><strong>Automation path:</strong> Selenium → Playwright → Task Scheduler → Cron jobs</li><li><strong>AI/ML path:</strong> NumPy → TensorFlow or PyTorch → Hugging Face</li></ul><h3>Build Your Portfolio</h3><p>The fastest way to get hired is to build projects. Here are 5 portfolio projects that impress employers:</p><ul><li>Web scraper that collects and saves real data</li><li>Data analysis project with visualizations</li><li>REST API with Flask or FastAPI</li><li>Automation script that solves a real problem you have</li><li>Machine learning model with a simple web interface</li></ul><h3>Your Certificate</h3><p>Click the button below to generate your free Certificate of Completion!</p>`},
+    ]
+  },
+];
+
+const QUIZ_QUESTIONS = [
+  {q:"What does the print() function do in Python?", opts:["Saves output to a file","Displays output on the screen","Creates a printed document","Imports a module"], ans:1, exp:"print() is the basic output function in Python — it displays whatever you pass to it on the screen."},
+  {q:"Which symbol is used to assign a value to a variable in Python?", opts:["==","=>","=","::"], ans:2, exp:"= is the assignment operator in Python. == is for comparison (checking if two values are equal)."},
+  {q:"What will print(10 // 3) output?", opts:["3.33","3","4","1"], ans:1, exp:"// is floor division — it divides and rounds down to the nearest whole number. 10 ÷ 3 = 3.33, rounded down = 3."},
+  {q:"How do you start a for loop to iterate 5 times in Python?", opts:["for i in range(5):","for i = 0 to 5:","loop 5 times:","repeat(5):"], ans:0, exp:"range(5) generates numbers 0,1,2,3,4 — giving you exactly 5 iterations. This is the standard Python way."},
+  {q:"Which keyword is used to define a function in Python?", opts:["function","func","def","define"], ans:2, exp:"def is Python keyword for defining functions. Example: def my_function(): — clean and simple!"},
+];
+
+const SNIPPETS = [
+  {title:"Hello World", lang:"Python Basics", code:`<span class="kw">print</span>(<span class="str">"Hello, World!"</span>)\n<span class="kw">print</span>(<span class="str">"Welcome to Python!"</span>)`},
+  {title:"FizzBuzz", lang:"Loops & Logic", code:`<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">101</span>):\n    <span class="kw">if</span> i % <span class="num">15</span> == <span class="num">0</span>: <span class="kw">print</span>(<span class="str">"FizzBuzz"</span>)\n    <span class="kw">elif</span> i % <span class="num">3</span> == <span class="num">0</span>: <span class="kw">print</span>(<span class="str">"Fizz"</span>)\n    <span class="kw">elif</span> i % <span class="num">5</span> == <span class="num">0</span>: <span class="kw">print</span>(<span class="str">"Buzz"</span>)\n    <span class="kw">else</span>: <span class="kw">print</span>(i)`},
+  {title:"List Comprehension", lang:"Pythonic Code", code:`squares = [x**<span class="num">2</span> <span class="kw">for</span> x <span class="kw">in</span> <span class="fn">range</span>(<span class="num">10</span>)]\nevens = [x <span class="kw">for</span> x <span class="kw">in</span> <span class="fn">range</span>(<span class="num">20</span>) <span class="kw">if</span> x%<span class="num">2</span>==<span class="num">0</span>]\n<span class="kw">print</span>(squares)\n<span class="kw">print</span>(evens)`},
+  {title:"Read CSV File", lang:"File I/O", code:`<span class="kw">import</span> csv\n<span class="kw">with</span> <span class="fn">open</span>(<span class="str">"data.csv"</span>) <span class="kw">as</span> f:\n    reader = csv.<span class="fn">DictReader</span>(f)\n    <span class="kw">for</span> row <span class="kw">in</span> reader:\n        <span class="kw">print</span>(row[<span class="str">"name"</span>], row[<span class="str">"value"</span>])`},
+  {title:"Fetch JSON from API", lang:"Web & APIs", code:`<span class="kw">import</span> requests\nres = requests.<span class="fn">get</span>(<span class="str">"https://api.example.com/data"</span>)\ndata = res.<span class="fn">json</span>()\n<span class="kw">print</span>(data[<span class="str">"result"</span>])`},
+  {title:"Sort Dictionary by Value", lang:"Data Structures", code:`scores = {<span class="str">"Alice"</span>: <span class="num">95</span>, <span class="str">"Bob"</span>: <span class="num">87</span>, <span class="str">"Carol"</span>: <span class="num">92</span>}\nsorted_scores = <span class="fn">sorted</span>(scores.<span class="fn">items</span>(),\n    key=<span class="kw">lambda</span> x: x[<span class="num">1</span>], reverse=<span class="kw">True</span>)\n<span class="kw">print</span>(sorted_scores)`},
+  {title:"Remove List Duplicates", lang:"Data Structures", code:`items = [<span class="num">1</span>,<span class="num">2</span>,<span class="num">2</span>,<span class="num">3</span>,<span class="num">3</span>,<span class="num">3</span>,<span class="num">4</span>]\nunique = <span class="fn">list</span>(<span class="fn">set</span>(items))\nunique_ordered = <span class="fn">list</span>(<span class="fn">dict</span>.<span class="fn">fromkeys</span>(items))\n<span class="kw">print</span>(unique_ordered)  <span class="cm"># keeps order</span>`},
+  {title:"Timer Decorator", lang:"Advanced", code:`<span class="kw">import</span> time\n<span class="kw">def</span> <span class="fn">timer</span>(func):\n    <span class="kw">def</span> <span class="fn">wrapper</span>(*args):\n        start = time.<span class="fn">time</span>()\n        result = <span class="fn">func</span>(*args)\n        <span class="kw">print</span>(<span class="str">f"Took {time.time()-start:.2f}s"</span>)\n        <span class="kw">return</span> result\n    <span class="kw">return</span> wrapper`},
+  {title:"Flatten Nested List", lang:"Pythonic Code", code:`nested = [[<span class="num">1</span>,<span class="num">2</span>],[<span class="num">3</span>,<span class="num">4</span>],[<span class="num">5</span>,<span class="num">6</span>]]\nflat = [x <span class="kw">for</span> row <span class="kw">in</span> nested <span class="kw">for</span> x <span class="kw">in</span> row]\n<span class="kw">print</span>(flat)  <span class="cm"># [1, 2, 3, 4, 5, 6]</span>`},
+];
+
+const LIBRARIES = [
+  {icon:"📊",name:"Pandas",desc:"Data analysis & manipulation. Load, clean, filter CSV and Excel files.",badge:"popular",cat:"Data"},
+  {icon:"🔢",name:"NumPy",desc:"Fast numerical computing with arrays and matrices.",badge:"popular",cat:"Data"},
+  {icon:"📈",name:"Matplotlib",desc:"Create charts, graphs, and visualizations.",badge:"free",cat:"Data"},
+  {icon:"🤖",name:"Scikit-learn",desc:"Machine learning: classification, regression, clustering.",badge:"popular",cat:"AI/ML"},
+  {icon:"🧠",name:"TensorFlow",desc:"Deep learning and neural networks by Google.",badge:"popular",cat:"AI/ML"},
+  {icon:"🔥",name:"PyTorch",desc:"Deep learning framework by Meta. Used in research.",badge:"popular",cat:"AI/ML"},
+  {icon:"🌐",name:"Requests",desc:"Make HTTP requests to APIs and websites.",badge:"free",cat:"Web"},
+  {icon:"🕷️",name:"BeautifulSoup",desc:"Parse HTML and web scraping.",badge:"free",cat:"Web"},
+  {icon:"⚡",name:"Flask",desc:"Lightweight web framework for building web apps.",badge:"popular",cat:"Web"},
+  {icon:"🏗️",name:"Django",desc:"Full-featured web framework — batteries included.",badge:"popular",cat:"Web"},
+  {icon:"📮",name:"FastAPI",desc:"Modern, fast API framework with auto documentation.",badge:"popular",cat:"Web"},
+  {icon:"📋",name:"OpenPyXL",desc:"Read and write Excel (.xlsx) files.",badge:"free",cat:"Productivity"},
+  {icon:"📄",name:"PyPDF2",desc:"Read, split, and merge PDF files.",badge:"free",cat:"Productivity"},
+  {icon:"🗓️",name:"schedule",desc:"Run Python functions at scheduled times.",badge:"free",cat:"Automation"},
+  {icon:"🖱️",name:"Selenium",desc:"Automate web browsers for testing and scraping.",badge:"free",cat:"Automation"},
+  {icon:"🎮",name:"Pygame",desc:"Build 2D games in Python.",badge:"free",cat:"Games"},
+  {icon:"🎨",name:"Pillow",desc:"Image processing — resize, convert, filter images.",badge:"free",cat:"Media"},
+  {icon:"🎵",name:"pydub",desc:"Manipulate audio files: trim, merge, convert.",badge:"free",cat:"Media"},
+  {icon:"📦",name:"SQLite3",desc:"Built-in database — no install needed.",badge:"free",cat:"Database"},
+  {icon:"🔐",name:"cryptography",desc:"Encrypt and decrypt data securely.",badge:"free",cat:"Security"},
+  {icon:"📬",name:"smtplib",desc:"Send emails programmatically (built-in).",badge:"free",cat:"Productivity"},
+  {icon:"🌍",name:"Scrapy",desc:"Full web scraping framework for large projects.",badge:"popular",cat:"Web"},
+  {icon:"📱",name:"Kivy",desc:"Build mobile apps with Python.",badge:"free",cat:"Mobile"},
+  {icon:"🔍",name:"re",desc:"Regular expressions for pattern matching (built-in).",badge:"free",cat:"Text"},
+];
+
+const ROADMAP_DATA = [
+  {emoji:"🌱",color:"#22C55E",type:"done",title:"Stage 1: Python Basics (Hours 1–4)",desc:"Variables, data types, print(), input(), f-strings, basic math. You'll write your first real programs.",tags:["Module 1","Variables","Strings"]},
+  {emoji:"🔄",color:"#F97316",type:"done",title:"Stage 2: Control Flow (Hours 5–8)",desc:"if/elif/else, for loops, while loops, functions. Your programs start making decisions and repeating tasks.",tags:["Module 2","Loops","Functions"]},
+  {emoji:"📋",color:"#3B82F6",type:"curr",title:"Stage 3: Data Structures (Hours 9–12)",desc:"Lists, dictionaries, tuples, sets. Store and organize complex data in powerful ways.",tags:["Module 3","Lists","Dicts"]},
+  {emoji:"📁",color:"#8B5CF6",type:"lock",title:"Stage 4: Files & OOP (Hours 13–16)",desc:"Read/write files, handle errors, use modules, write your first classes.",tags:["Module 4","Files","Classes"]},
+  {emoji:"🌐",color:"#EC4899",type:"lock",title:"Stage 5: Real-World Python (Hours 17–20)",desc:"Web scraping, APIs, automation, Pandas. Write programs that interact with the internet and real data.",tags:["Module 5","APIs","Pandas"]},
+  {emoji:"🚀",color:"#D97706",type:"lock",title:"Stage 6: Projects & Career (Hours 21–24)",desc:"Build complete apps, learn Flask basics, and plan your Python career path.",tags:["Module 6","Projects","Career"]},
+  {emoji:"🏆",color:"#16A34A",type:"lock",title:"Graduate: Free Certificate",desc:"Complete all 6 modules and 6 quizzes to unlock your Python certificate of completion.",tags:["Certificate","Portfolio"]},
+];
+
+const BA_DATA = [
+  {task:"Rename 500 files",before:"Click each file, press F2, retype name, repeat 500 times",bt:"⏱ 3+ hours",after:"Write a 10-line Python script once, run it",at:"⚡ 30 seconds"},
+  {task:"Analyze sales data",before:"Open Excel, filter manually, copy-paste into charts",bt:"⏱ 2 hours",after:"Load CSV with Pandas, run groupby, auto-chart",at:"⚡ 5 minutes"},
+  {task:"Check website prices daily",before:"Visit 10 sites daily, manually compare and note prices",bt:"⏱ 1 hour/day",after:"Scrape all 10 sites with Python, email yourself the results",at:"⚡ 0 minutes (automated)"},
+  {task:"Send personalized emails",before:"Copy-paste names and details into each email manually",bt:"⏱ 4 hours for 200 emails",after:"One Python script with CSV of names sends all 200",at:"⚡ 2 minutes"},
+  {task:"Extract data from PDFs",before:"Open each PDF, manually copy text, paste into spreadsheet",bt:"⏱ Days of work",after:"PyPDF2 extracts all text automatically across 1000 files",at:"⚡ Under a minute"},
+];
+
+const TESTIMONIALS = [
+  {stars:"★★★★★",text:"I tried learning Python 3 times before. This course finally made it click. The code examples in every lesson make the difference — I can actually write programs now!",name:"Priya S.",role:"Marketing Manager",country:"India",init:"PS"},
+  {stars:"★★★★★",text:"Finished the course in a weekend. The automation module alone saved me 5 hours this week. I automated our weekly reporting and my boss was genuinely impressed.",name:"Marcus W.",role:"Operations Analyst",country:"Germany",init:"MW"},
+  {stars:"★★★★★",text:"As a 52-year-old non-techie, I was terrified. But the explanations are so clear. I built my first web scraper in Week 2 and I could not stop smiling.",name:"Linda K.",role:"Teacher",country:"Australia",init:"LK"},
+  {stars:"★★★★★",text:"The data analysis module with Pandas is worth the entire course on its own. I now process our monthly data reports in minutes instead of hours.",name:"Raj P.",role:"Data Analyst",country:"UK",init:"RP"},
+  {stars:"★★★★★",text:"I've been recommending this to everyone in my team. Free, up-to-date, and actually teaches real Python — not toy examples. The quizzes make sure you actually learn.",name:"Sofia M.",role:"Product Manager",country:"Brazil",init:"SM"},
+  {stars:"★★★★★",text:"Got my first Python developer job 4 months after starting this course. The project lessons are what made the difference in my portfolio and interviews.",name:"Chen L.",role:"Junior Dev",country:"Canada",init:"CL"},
+];
+
+const CAREERS = [
+  {icon:"🐍",title:"Python Developer",salary:"$75K–$140K/yr",desc:"Build applications, APIs, and tools using Python",badge:"High Demand"},
+  {icon:"📊",title:"Data Analyst",salary:"$60K–$110K/yr",desc:"Use Pandas and SQL to analyze and visualize data",badge:"Entry-Friendly"},
+  {icon:"🤖",title:"ML Engineer",salary:"$100K–$180K/yr",desc:"Build machine learning models with Python and TensorFlow",badge:"Top Paying"},
+  {icon:"🌐",title:"Backend Developer",salary:"$80K–$150K/yr",desc:"Build web APIs and servers with Django or Flask",badge:"Growing"},
+  {icon:"🔬",title:"Data Scientist",salary:"$90K–$160K/yr",desc:"Statistical analysis, modeling, predictive analytics",badge:"Premium"},
+  {icon:"🤖",title:"AI/LLM Engineer",salary:"$120K–$200K/yr",desc:"Build AI applications using Python and LLM APIs",badge:"Hottest 2025"},
+  {icon:"⚙️",title:"DevOps Engineer",salary:"$85K–$155K/yr",desc:"Python scripts for CI/CD, infrastructure, and automation",badge:"Stable"},
+  {icon:"🕷️",title:"Web Scraping Specialist",salary:"$50K–$100K/yr",desc:"Build data collection pipelines for businesses",badge:"Freelance"},
+  {icon:"🔐",title:"Security Engineer",salary:"$90K–$160K/yr",desc:"Write Python tools for penetration testing and defense",badge:"Niche"},
+  {icon:"🧪",title:"QA Automation Engineer",salary:"$65K–$120K/yr",desc:"Automate software testing with Python and Selenium",badge:"Stable"},
+];
+
+const MISTAKES = [
+  {title:"Trying to Memorize Syntax",fix:"<strong>Fix:</strong> Python syntax is learnt by doing, not memorizing. Code every day and it sticks naturally. Use docs when stuck."},
+  {title:"Not Running the Code",fix:"<strong>Fix:</strong> Every lesson has code examples. Type them out and run them yourself — do not just read them. Muscle memory matters."},
+  {title:"Skipping Error Messages",fix:"<strong>Fix:</strong> Error messages tell you exactly what is wrong and on which line. Read them carefully — they're your best debugging tool."},
+  {title:"Copying Code Without Understanding",fix:"<strong>Fix:</strong> Always type code yourself. When you copy, you miss the patterns that make Python click."},
+  {title:"Overcomplicating Solutions",fix:"<strong>Fix:</strong> Python motto is 'Simple is better than complex.' If your solution is long, there is probably a simpler Python way."},
+  {title:"Not Using Python Built-ins",fix:"<strong>Fix:</strong> Before writing a function, check if Python already has it. len(), sorted(), enumerate(), zip() save enormous time."},
+  {title:"Forgetting Indentation Rules",fix:"<strong>Fix:</strong> Python uses indentation to define code blocks. Always use 4 spaces (not tabs). One wrong indent = error."},
+  {title:"Quitting When Stuck",fix:"<strong>Fix:</strong> Getting stuck is learning. Try for 15 minutes, then Google the specific error. Stack Overflow has every Python answer."},
+];
+
+const HABITS = [
+  {day:1,title:"Install Python & Run Hello World (20 min)",desc:"Install Python, open a terminal, type print('Hello') and run it. That is your first program. It counts.",tool:"Python + any text editor"},
+  {day:2,title:"Variables & Calculator (20 min)",desc:"Write a script that asks for your name and age, then prints something personalised. Practice f-strings.",tool:"Python basics"},
+  {day:3,title:"Loops Practice (20 min)",desc:"Write 3 loops: print 1–100, print only even numbers, then build the 7 times table using range().",tool:"for loops + range()"},
+  {day:4,title:"List & Dict Exercises (20 min)",desc:"Create a shopping list with a list. Create a contact card with a dict. Add, remove, and loop through both.",tool:"Lists + Dicts"},
+  {day:5,title:"Functions Challenge (20 min)",desc:"Write 3 functions: one that converts Celsius to Fahrenheit, one that checks if a number is even, one that reverses a string.",tool:"def + return"},
+  {day:6,title:"File Read & Write (20 min)",desc:"Write a script that reads a text file and counts the number of words. Then saves the count to a new file.",tool:"open() + with"},
+  {day:7,title:"Error Handling (20 min)",desc:"Wrap your calculator from Day 2 in a try/except to handle when a user enters text instead of a number.",tool:"try/except"},
+  {day:8,title:"Install & Use a Library (20 min)",desc:"pip install requests. Then fetch data from a free public API (e.g. https://catfact.ninja/fact) and print the result.",tool:"pip + requests"},
+  {day:9,title:"Mini Project Day (30 min)",desc:"Build a number guessing game: computer picks 1–100, user guesses, you say higher/lower until correct.",tool:"random + while + if"},
+  {day:10,title:"Review & Portfolio (20 min)",desc:"Review your 9 days of code. Pick your best script, clean it up, add comments, and save it as your first portfolio piece.",tool:"Your judgment 🐍"},
+];
+
+const FAQ = [
+  {q:"Do I need any experience to start this Python course?",a:"Zero experience needed. This course starts from the very beginning — what Python is, how to install it, and your first program. The only requirement is a computer and the willingness to try."},
+  {q:"How long does it actually take to learn Python?",a:"The basics take about 24 hours of focused learning — that is what this course is built around. To become job-ready takes 3–6 months of consistent practice. But you'll be writing useful scripts within a few hours of starting."},
+  {q:"Is Python still worth learning in 2025?",a:"Absolutely. Python is the #1 most popular programming language in 2025 (Stack Overflow survey). It powers most AI/ML tools, is a top requirement in data jobs, and is used in web development, automation, and more. Demand is higher than ever."},
+  {q:"What can I actually build with Python?",a:"Web apps (with Flask or Django), data analysis tools, automation scripts, AI and ML models, web scrapers, games, desktop apps, REST APIs, bots, and much more. Python is one of the most versatile languages in existence."},
+  {q:"Do I need to buy anything?",a:"No. Python is 100% free and open source. All the libraries in this course are free. The course is free. Your certificate is free. You need a computer and an internet connection — that is it."},
+  {q:"What's the difference between Python 2 and Python 3?",a:"Python 2 was officially retired in 2020. Python 3 is the current standard and what this course teaches. If you see Python 2 code online, it will not work in Python 3 without changes — just be aware of this."},
+  {q:"Which Python IDE or editor should I use?",a:"VS Code is the most popular choice (free, lightweight, great Python support). PyCharm is excellent for larger projects. For beginners, even an online editor like replit.com works perfectly — no installation required."},
+  {q:"Can I get a job with Python alone?",a:"Python alone will not land you a job, but Python + one specialization will. Pick a path: data analysis (add Pandas + SQL), web development (add Flask/Django), or AI/ML (add NumPy + TensorFlow). That combination is very hireable."},
+  {q:"How is this different from paid Python courses?",a:"Paid courses cost $50–$200 and are often outdated. This course is maintained for free, updated regularly, and covers the same material. The only difference is we run ads to keep it free. No paywalls, no upsells — ever."},
+  {q:"What should I learn after finishing this course?",a:"Depends on your goal. For data: Pandas, SQL, Matplotlib. For web: Flask then Django. For AI/ML: NumPy, scikit-learn, TensorFlow. For automation: Selenium, schedule, smtplib. The roadmap section above covers each path in detail."},
+];
+
+const GLOSSARY = [
+  {term:"variable",def:"A named container that stores a value. name = 'Alice' creates a variable called name."},
+  {term:"function",def:"A reusable block of code defined with def. Call it by name to execute its code."},
+  {term:"loop",def:"Code that repeats: for loops run for each item in a sequence; while loops run until a condition is False."},
+  {term:"list",def:"An ordered, mutable collection: [1, 2, 3]. Items accessed by index starting at 0."},
+  {term:"dictionary",def:"Key-value storage: {'name': 'Alice'}. Look up values by key instead of index."},
+  {term:"string",def:"Text data in quotes: 'hello' or \"hello\". Has many built-in methods like .upper(), .split()."},
+  {term:"integer",def:"A whole number with no decimal: 5, -3, 1000. Math operations work as expected."},
+  {term:"float",def:"A decimal number: 3.14, -0.5. Division in Python 3 always returns a float."},
+  {term:"boolean",def:"True or False. Used in conditions and comparisons. bool(0) is False, bool(1) is True."},
+  {term:"indentation",def:"Spaces at the start of a line that define code blocks. Python uses 4 spaces — it is mandatory."},
+  {term:"module",def:"A file containing Python code you can import and reuse. import math brings in the math module."},
+  {term:"library",def:"A collection of modules providing related functionality, like pandas for data or requests for HTTP."},
+  {term:"class",def:"A blueprint for creating objects. Defined with class MyClass: and instantiated with obj = MyClass()."},
+  {term:"object",def:"An instance of a class. If Dog is a class, rex = Dog('Rex') creates an object called rex."},
+  {term:"method",def:"A function that belongs to an object. list.append() and string.upper() are methods."},
+  {term:"return",def:"A keyword inside a function that sends a value back to the caller and ends the function."},
+  {term:"exception",def:"An error that occurs during runtime. Use try/except to handle exceptions gracefully."},
+  {term:"pip",def:"Python package manager. pip install requests installs the requests library from PyPI."},
+  {term:"f-string",def:"A formatted string literal: f'Hello {name}'. Embeds variables directly into strings."},
+  {term:"list comprehension",def:"A concise way to create lists: [x**2 for x in range(10)] creates a list of squares."},
+  {term:"lambda",def:"An anonymous one-line function: lambda x: x*2 is equivalent to def f(x): return x*2."},
+  {term:"iterator",def:"An object that returns items one at a time. Loops use iterators behind the scenes."},
+  {term:"None",def:"Python null value — represents the absence of a value. Different from 0, False, or empty string."},
+  {term:"__init__",def:"A special class method (constructor) that runs when you create a new instance of a class."},
+];
+
+const BLOG = [
+  {emoji:"📋",cat:"Beginner Guide",title:"Python vs JavaScript: Which Should You Learn First in 2025?",excerpt:"A practical comparison for complete beginners, based on your goals and what you want to build.",date:"Mar 2025",read:"6 min",bg:"#FFF7ED"},
+  {emoji:"⚙️",cat:"Automation",title:"10 Python Scripts That Will Save You 10 Hours a Week",excerpt:"Real automation scripts you can copy and run today — no prior Python experience needed.",date:"Feb 2025",read:"8 min",bg:"#F0FDF4"},
+  {emoji:"📊",cat:"Data Science",title:"Pandas Tutorial: Analyze Any Dataset in Under 30 Minutes",excerpt:"A step-by-step walkthrough of loading, cleaning, and visualizing data with Python Pandas.",date:"Feb 2025",read:"10 min",bg:"#EFF6FF"},
+  {emoji:"🌐",cat:"Web Dev",title:"Build Your First Flask API in 15 Minutes",excerpt:"From zero to a working REST API endpoint with Flask and Python. No prior web experience needed.",date:"Jan 2025",read:"7 min",bg:"#FFF7ED"},
+  {emoji:"🤖",cat:"AI & ML",title:"Using Python to Call ChatGPT and Gemini APIs",excerpt:"How to integrate OpenAI and Google's AI APIs into your Python projects with just 10 lines of code.",date:"Mar 2025",read:"9 min",bg:"#F5F3FF"},
+  {emoji:"🏆",cat:"Career",title:"Python Developer Portfolio: 5 Projects That Get You Hired",excerpt:"The exact portfolio projects hiring managers look for, and how to build each one from scratch.",date:"Mar 2025",read:"11 min",bg:"#ECFDF5"},
+];
+
+const RELATED = [
+  {emoji:"🤖",title:"AI Tools for Beginners",desc:"Master ChatGPT, Gemini, Midjourney and 25 more AI tools.",meta:"24 lessons · Free · Certificate"},
+  {emoji:"📊",title:"Data Science with Python",desc:"NumPy, Pandas, Matplotlib — from data to insights.",meta:"28 lessons · Intermediate · Free"},
+  {emoji:"🌐",title:"Web Dev with Flask & Django",desc:"Build real web apps and REST APIs with Python.",meta:"30 lessons · Intermediate · Free"},
+  {emoji:"☁️",title:"Python for Cloud & DevOps",desc:"Automate infrastructure with Python, AWS, and Docker.",meta:"20 lessons · Advanced · Free"},
+];
+
+const TIPS = [
+  {text:"Use list comprehensions instead of for loops to write cleaner, faster code.",code:"[x**2 for x in range(10)]"},
+  {text:"The enumerate() function gives you both index and value in a loop.",code:"for i, val in enumerate(my_list):"},
+  {text:"Use .get() on dicts to avoid KeyError when a key might not exist.",code:'data.get("key", "default")'},
+  {text:"f-strings are faster and cleaner than .format() or % formatting.",code:'f"Hello, {name}! You are {age}."'},
+  {text:"zip() lets you loop through two lists simultaneously with one line.",code:"for a, b in zip(list1, list2):"},
+];
+
+// ═══════════════════════════════════
+// STATE
+// ═══════════════════════════════════
+const STATE_KEY = 'py_state';
+let state = JSON.parse(localStorage.getItem(STATE_KEY) || '{"done":[],"quizScores":{}}');
+function saveState(){ localStorage.setItem(STATE_KEY, JSON.stringify(state)); }
+
+let currentLessonIdx = 0;
+let allLessons = [];
+MODULES.forEach((m,mi) => m.lessons.forEach((l,li) => allLessons.push({...l, module:m.title, moduleIdx:mi, lessonIdx:li, globalIdx: allLessons ? allLessons.length : 0})));
+// rebuild with correct globalIdx
+allLessons = [];
+MODULES.forEach((m,mi) => m.lessons.forEach((l,li) => {
+  allLessons.push({...l, module:m.title, moduleIdx:mi, lessonIdx:li, globalIdx:allLessons.length});
+}));
+
+// ═══════════════════════════════════
+// BUILDERS
+// ═══════════════════════════════════
+
+function buildTicker(){
+  const msgs = [
+    '🐍 <strong>31,400+</strong> learners enrolled this month',
+    '✅ Completely free — no credit card ever',
+    '⭐ Rated 4.9/5 by 2,841 students',
+    '🏆 Free certificate on completion',
+    '🚀 Most learners write their first program within 30 minutes',
+    '💼 Python is the <strong>#1 in-demand language</strong> in 2025',
+    '📊 Graduates report saving <strong>8+ hours/week</strong> with Python automation',
+    '🌍 Learners in <strong>128 countries</strong>',
+  ];
+  const doubled = [...msgs,...msgs];
+  document.getElementById('tickerInner').innerHTML = doubled.map(m=>`<span>${m}</span>`).join('');
+}
+
+function buildSkills(){
+  const skills = [
+    {icon:'💬',title:'Write Python Programs',desc:'Create real scripts that run on your computer from day one.'},
+    {icon:'🔄',title:'Automate Repetitive Tasks',desc:'Rename files, send emails, process data — automatically.'},
+    {icon:'📊',title:'Analyze Data with Pandas',desc:'Load CSVs, filter rows, create charts from real datasets.'},
+    {icon:'🌐',title:'Scrape the Web',desc:'Extract data from any website with BeautifulSoup.'},
+    {icon:'🔌',title:'Work with APIs',desc:'Connect to weather, news, AI, and any web service.'},
+    {icon:'🧱',title:'Object-Oriented Programming',desc:'Write professional, reusable code with classes and objects.'},
+    {icon:'🌍',title:'Build Web Apps',desc:'Create your first web application with Flask.'},
+    {icon:'🛠️',title:'Debug & Handle Errors',desc:'Read error messages, fix bugs, write robust programs.'},
+    {icon:'📁',title:'Work with Files',desc:'Read, write, and process text, CSV, and JSON files.'},
+    {icon:'📦',title:'Use Python Libraries',desc:'Install and use thousands of free packages with pip.'},
+    {icon:'🤖',title:'Intro to Machine Learning',desc:'Load data, train a model, and make predictions.'},
+    {icon:'🚀',title:'Build a Portfolio Project',desc:'Ship a complete, real-world Python application.'},
+  ];
+  document.getElementById('skillsGrid').innerHTML = skills.map(s=>`
+    <div class="skill-card">
+      <div class="sc-icon">${s.icon}</div>
+      <div class="sc-title">${s.title}</div>
+      <div class="sc-desc">${s.desc}</div>
+    </div>`).join('');
+}
+
+function buildModules(){
+  document.getElementById('moduleList').innerHTML = MODULES.map((m,mi)=>`
+    <div class="module-card">
+      <div class="mc-header" onclick="toggleModule(${mi})">
+        <div class="mc-icon-wrap">${m.emoji}</div>
+        <div class="mc-meta">
+          <div class="mc-title">Module ${m.id}: ${m.title}</div>
+          <div class="mc-sub">${m.sub}</div>
+        </div>
+        <span class="mc-toggle" id="mct${mi}">▼ Show Lessons</span>
+      </div>
+      <div class="mc-lessons" id="mcl${mi}">
+        ${m.lessons.map((l,li)=>{
+          const gIdx = mi*4+li;
+          const done = state.done.includes(gIdx);
+          return `<div class="lesson-row ${done?'done':''}" onclick="openLesson(${gIdx})">
+            <div class="lr-num">${done?'✓':gIdx+1}</div>
+            <div class="lr-title">${l.title}</div>
+            <span class="lr-tag">${l.tag}</span>
+            <div class="lr-dur">${l.dur}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`).join('');
+  updateProgress();
+}
+
+function toggleModule(mi){
+  const el = document.getElementById('mcl'+mi);
+  const lbl = document.getElementById('mct'+mi);
+  const open = el.classList.toggle('open');
+  lbl.textContent = open ? '▲ Hide Lessons' : '▼ Show Lessons';
+}
+
+function updateProgress(){
+  const pct = Math.round((state.done.length / allLessons.length) * 100);
+  document.getElementById('progLabel').textContent = pct + '% Complete';
+  const canvas = document.getElementById('progressRing');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const cx=50, cy=50, r=40;
+  ctx.clearRect(0,0,100,100);
+  ctx.beginPath(); ctx.arc(cx,cy,r,0,2*Math.PI);
+  ctx.strokeStyle='#F3F4F6'; ctx.lineWidth=8; ctx.stroke();
+  ctx.beginPath(); ctx.arc(cx,cy,r,-Math.PI/2,(2*Math.PI*pct/100)-(Math.PI/2));
+  ctx.strokeStyle='#EA580C'; ctx.lineWidth=8; ctx.lineCap='round'; ctx.stroke();
+  ctx.font='bold 16px Merriweather,serif'; ctx.fillStyle='#1A1A2E';
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  ctx.fillText(pct+'%',cx,cy);
+}
+
+function openLesson(gIdx){
+  currentLessonIdx = gIdx;
+  const lesson = allLessons[gIdx];
+  document.getElementById('lpModule').textContent = 'Module ' + (lesson.moduleIdx+1) + ': ' + lesson.module;
+  document.getElementById('lpTitle').textContent = lesson.title;
+  document.getElementById('lpBody').innerHTML = lesson.content;
+  document.getElementById('lpCounter').textContent = `Lesson ${gIdx+1} of ${allLessons.length}`;
+  document.getElementById('lessonOverlay').classList.add('open');
+  if(!state.done.includes(gIdx)){ state.done.push(gIdx); saveState(); buildModules(); }
+  if(state.done.length === allLessons.length){ setTimeout(()=>document.getElementById('certOverlay').classList.add('open'),1200); }
+}
+
+function closeLesson(){ document.getElementById('lessonOverlay').classList.remove('open'); }
+
+function navLesson(dir){
+  const next = currentLessonIdx + dir;
+  if(next >= 0 && next < allLessons.length) openLesson(next);
+}
+
+function startCourse(){ toggleModule(0); document.getElementById('course').scrollIntoView({behavior:'smooth'}); }
+
+// QUIZ
+let quizIdx=0, quizScore=0, quizAnswered=false;
+function buildQuiz(){ renderQuestion(); }
+function renderQuestion(){
+  if(quizIdx >= QUIZ_QUESTIONS.length){ showQuizResult(); return; }
+  const q = QUIZ_QUESTIONS[quizIdx];
+  quizAnswered = false;
+  document.getElementById('quizQ').textContent = q.q;
+  document.getElementById('quizBadge').textContent = `Q ${quizIdx+1} of ${QUIZ_QUESTIONS.length}`;
+  document.getElementById('quizProg').textContent = `Question ${quizIdx+1} of ${QUIZ_QUESTIONS.length}`;
+  document.getElementById('quizNextBtn').style.display = 'none';
+  document.getElementById('quizFeedback').className = 'quiz-feedback';
+  document.getElementById('quizFeedback').textContent = '';
+  document.getElementById('quizOpts').innerHTML = q.opts.map((o,i)=>`
+    <button class="quiz-opt" onclick="answerQuiz(${i})">${o}</button>`).join('');
+}
+function answerQuiz(i){
+  if(quizAnswered) return;
+  quizAnswered = true;
+  const q = QUIZ_QUESTIONS[quizIdx];
+  const opts = document.querySelectorAll('.quiz-opt');
+  opts.forEach((o,idx)=>{ if(idx===q.ans) o.classList.add('correct'); else if(idx===i) o.classList.add('wrong'); });
+  const fb = document.getElementById('quizFeedback');
+  if(i===q.ans){ quizScore++; fb.className='quiz-feedback show ok'; fb.textContent='✓ Correct! '+q.exp; }
+  else { fb.className='quiz-feedback show bad'; fb.textContent='✗ '+q.exp; }
+  document.getElementById('quizNextBtn').style.display='inline-block';
+}
+function quizNext(){ quizIdx++; renderQuestion(); }
+function showQuizResult(){
+  document.getElementById('quizMain').style.display='none';
+  const res = document.getElementById('quizResult');
+  res.classList.add('show');
+  const pct = Math.round(quizScore/QUIZ_QUESTIONS.length*100);
+  document.getElementById('qrStars').textContent = pct>=80?'★★★★★':pct>=60?'★★★★☆':'★★★☆☆';
+  document.getElementById('qrScore').textContent = `${quizScore}/${QUIZ_QUESTIONS.length} — ${pct}%`;
+  document.getElementById('qrMsg').textContent = pct===100?'Perfect! You have a solid Python foundation!':pct>=80?'Great work! Almost there — review the lessons and try again.':'Keep learning and revisit the quiz — you\'ll get there!';
+}
+function quizReset(){ quizIdx=0; quizScore=0; quizAnswered=false; document.getElementById('quizMain').style.display=''; document.getElementById('quizResult').classList.remove('show'); renderQuestion(); }
+
+// SNIPPETS
+function buildSnippets(){
+  document.getElementById('snippetGrid').innerHTML = SNIPPETS.map((s,i)=>`
+    <div class="snippet-card">
+      <div class="snip-bar">
+        <div class="snip-dot" style="background:#FF5F57"></div>
+        <div class="snip-dot" style="background:#FEBC2E"></div>
+        <div class="snip-dot" style="background:#28C840"></div>
+        <span class="snip-title">${s.title}</span>
+        <span class="snip-label">${s.lang}</span>
+      </div>
+      <div class="snip-code">${s.code}</div>
+      <button class="snip-copy" onclick="copySnippet(this,${i})">📋 Copy code</button>
+    </div>`).join('');
+}
+function copySnippet(btn,i){
+  const raw = SNIPPETS[i].code.replace(/<[^>]+>/g,'');
+  try{navigator.clipboard.writeText(raw);}catch(e){}
+  btn.textContent='✓ Copied!';
+  setTimeout(()=>btn.textContent='📋 Copy code',2000);
+}
+
+// LIBRARIES
+function buildLibs(){
+  document.getElementById('libGrid').innerHTML = LIBRARIES.map(l=>`
+    <div class="lib-card">
+      <div class="lib-icon">${l.icon}</div>
+      <div>
+        <div class="lib-name">${l.name}</div>
+        <div class="lib-desc">${l.desc}</div>
+        <span class="lib-badge ${l.badge}">${l.cat} · ${l.badge==='popular'?'⭐ Popular':'Free'}</span>
+      </div>
+    </div>`).join('');
+}
+
+// ROADMAP
+function buildRoadmap(){
+  document.getElementById('roadmapWrap').innerHTML = ROADMAP_DATA.map(s=>`
+    <div class="rm-step">
+      <div class="rm-dot" style="background:${s.type==='lock'?'#F3F4F6':s.color}">${s.emoji}</div>
+      <div class="rm-body">
+        <div class="rm-title">${s.title}</div>
+        <div class="rm-desc">${s.desc}</div>
+        <div class="rm-tags">${s.tags.map(t=>`<span class="rm-tag">${t}</span>`).join('')}</div>
+      </div>
+    </div>`).join('');
+}
+
+// BEFORE/AFTER
+function buildBA(){
+  document.getElementById('baGrid').innerHTML = BA_DATA.map(b=>`
+    <div class="ba-card">
+      <div class="ba-task">${b.task}</div>
+      <div class="ba-sides">
+        <div class="ba-before"><div class="ba-label">❌ Without Python</div><div class="ba-text">${b.before}</div><div class="ba-time">${b.bt}</div></div>
+        <div class="ba-after"><div class="ba-label">✅ With Python</div><div class="ba-text">${b.after}</div><div class="ba-time">${b.at}</div></div>
+      </div>
+    </div>`).join('');
+}
+
+// TESTIMONIALS
+function buildTestimonials(){
+  document.getElementById('testiGrid').innerHTML = TESTIMONIALS.map(t=>`
+    <div class="testi-card">
+      <div class="tc-stars">${t.stars}</div>
+      <div class="tc-text">"${t.text}"</div>
+      <div class="tc-author">
+        <div class="tc-avatar">${t.init}</div>
+        <div><div class="tc-name">${t.name}</div><div class="tc-role">${t.role} · ${t.country}</div></div>
+      </div>
+    </div>`).join('');
+}
+
+// CAREERS
+function buildCareers(){
+  document.getElementById('careerGrid').innerHTML = CAREERS.map(c=>`
+    <div class="career-card">
+      <div class="cc-icon">${c.icon}</div>
+      <div class="cc-title">${c.title}</div>
+      <div class="cc-salary">💰 ${c.salary}</div>
+      <div class="cc-desc">${c.desc}</div>
+      <span class="cc-badge">${c.badge}</span>
+    </div>`).join('');
+}
+
+// MISTAKES
+function buildMistakes(){
+  document.getElementById('mistakesGrid').innerHTML = MISTAKES.map((m,i)=>`
+    <div class="mistake-card">
+      <div class="mk-num">Mistake #${i+1}</div>
+      <div class="mk-title">${m.title}</div>
+      <div class="mk-fix">${m.fix}</div>
+    </div>`).join('');
+}
+
+// HABITS
+function buildHabits(){
+  document.getElementById('habitsList').innerHTML = HABITS.map(h=>`
+    <div class="habit-item">
+      <div class="habit-day"><div class="hd-num">${h.day}</div><div class="hd-lbl">Day</div></div>
+      <div>
+        <div class="habit-title">${h.title}</div>
+        <div class="habit-desc">${h.desc}</div>
+        <span class="habit-tool">🔧 ${h.tool}</span>
+      </div>
+    </div>`).join('');
+}
+
+// OUTCOMES
+function buildOutcomes(){
+  const O = [
+    {icon:'⏰',val:'8 hrs',lbl:'saved per week through Python automation'},
+    {icon:'💼',val:'4 mo',lbl:'average time from start to first Python job'},
+    {icon:'📈',val:'62%',lbl:'got a raise or new role within 6 months'},
+    {icon:'🚀',val:'10x',lbl:'faster at data tasks after completing the course'},
+    {icon:'🌍',val:'128',lbl:'countries represented in our learner community'},
+    {icon:'⭐',val:'4.9',lbl:'average course rating from 2,841 reviews'},
+  ];
+  document.getElementById('outcomeGrid').innerHTML = O.map(o=>`
+    <div class="outcome-card">
+      <div class="oc-icon">${o.icon}</div>
+      <div class="oc-val">${o.val}</div>
+      <div class="oc-lbl">${o.lbl}</div>
+    </div>`).join('');
+}
+
+// FAQ
+function buildFAQ(){
+  document.getElementById('faqList').innerHTML = FAQ.map((f,i)=>`
+    <div class="faq-item" id="faq${i}">
+      <div class="faq-q" onclick="toggleFAQ(${i})">${f.q}<span class="faq-icon">+</span></div>
+      <div class="faq-a">${f.a}</div>
+    </div>`).join('');
+}
+function toggleFAQ(i){ document.getElementById('faq'+i).classList.toggle('open'); }
+
+// GLOSSARY
+function buildGlossary(){
+  document.getElementById('glossaryGrid').innerHTML = GLOSSARY.map(g=>`
+    <div class="gloss-card">
+      <div class="gloss-term">${g.term}</div>
+      <div class="gloss-def">${g.def}</div>
+    </div>`).join('');
+}
+
+// BLOG
+function buildBlog(){
+  document.getElementById('blogGrid').innerHTML = BLOG.map(b=>`
+    <div class="blog-card">
+      <div class="blog-thumb" style="background:${b.bg}">${b.emoji}</div>
+      <div class="blog-body">
+        <div class="blog-cat">${b.cat}</div>
+        <div class="blog-title">${b.title}</div>
+        <div class="blog-excerpt">${b.excerpt}</div>
+        <div class="blog-meta"><span>📅 ${b.date}</span><span>⏱ ${b.read} read</span></div>
+      </div>
+    </div>`).join('');
+}
+
+// RELATED
+function buildRelated(){
+  document.getElementById('relatedGrid').innerHTML = RELATED.map(r=>`
+    <div class="related-card">
+      <div class="rc-emoji">${r.emoji}</div>
+      <div class="rc-title">${r.title}</div>
+      <div class="rc-desc">${r.desc}</div>
+      <div class="rc-meta">${r.meta}</div>
+    </div>`).join('');
+}
+
+// DAILY TIP
+function setTip(){
+  const t = TIPS[new Date().getDay() % TIPS.length];
+  document.getElementById('tipText').textContent = t.text;
+  document.getElementById('tipCode').textContent = t.code;
+}
+
+// NAV PROGRESS
+window.addEventListener('scroll',()=>{
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('npFill').style.width = (window.scrollY/h*100)+'%';
+});
+
+// INIT ALL
+buildTicker();
+buildSkills();
+buildModules();
+buildQuiz();
+buildSnippets();
+buildLibs();
+buildRoadmap();
+buildBA();
+buildTestimonials();
+buildCareers();
+buildMistakes();
+buildHabits();
+buildOutcomes();
+buildFAQ();
+buildGlossary();
+buildBlog();
+buildRelated();
+setTip();
+
+
+// ======= MODULE QUIZ DATA =======
+const MOD_QUIZZES = [
+  { mod:1, title:'Python Fundamentals', emoji:'🐍', questions:[
+    {q:'What function displays output in Python?', opts:['show()','display()','print()','output()'], ans:2, exp:'print() is Python built-in output function. It displays whatever you pass to it on screen.'},
+    {q:'Which symbol assigns a value to a variable?', opts:['==','->','=',':='], ans:2, exp:'= is the assignment operator. == is used for comparison. So: name = "Alice" stores Alice in a variable.'},
+    {q:'What is the correct way to write an f-string?', opts:['f("Hello {name}")','f"Hello {name}"','"Hello" + name','"Hello %s" % name'], ans:1, exp:'f-strings prefix the opening quote with f: f"Hello {name}" — curly braces embed the variable directly.'},
+    {q:'What data type is the value True in Python?', opts:['string','integer','boolean','float'], ans:2, exp:'True and False are booleans — used in conditions and logical operations.'},
+  ]},
+  { mod:2, title:'Control Flow & Logic', emoji:'🔄', questions:[
+    {q:'Which keyword starts a conditional block in Python?', opts:['when','if','check','case'], ans:1, exp:'if is the keyword for conditional logic. The block runs when the condition is True.'},
+    {q:'What does range(1, 6) produce?', opts:['1,2,3,4,5,6','0,1,2,3,4,5','1,2,3,4,5','2,3,4,5,6'], ans:2, exp:'range(1, 6) generates 1,2,3,4,5 — starts at 1, stops BEFORE 6. The end value is excluded.'},
+    {q:'Which keyword exits a loop immediately?', opts:['exit','stop','break','end'], ans:2, exp:'break immediately exits the loop. continue skips to the next iteration.'},
+    {q:'What keyword defines a function in Python?', opts:['function','fun','define','def'], ans:3, exp:'def is Python function keyword. Example: def greet(name): defines a function called greet.'},
+  ]},
+  { mod:3, title:'Data Structures', emoji:'📋', questions:[
+    {q:'How do you access the first item of a list called items?', opts:['items[1]','items(0)','items[0]','items.first()'], ans:2, exp:'Python lists are zero-indexed — the first item is at index 0. items[0] gets the first element.'},
+    {q:'Which data structure stores key-value pairs?', opts:['list','tuple','set','dictionary'], ans:3, exp:'A dictionary stores key-value pairs: {"name": "Alice"}. Look up values by meaningful keys.'},
+    {q:'What method adds an item to the end of a list?', opts:['.add()','.push()','.insert()','.append()'], ans:3, exp:'.append() adds an item to the END of a list. .insert(index, item) adds at a specific position.'},
+    {q:'Which collection type does NOT allow duplicates?', opts:['list','tuple','set','dictionary'], ans:2, exp:'A set automatically removes duplicates. {1, 2, 2, 3} becomes {1, 2, 3}.'},
+  ]},
+  { mod:4, title:'Files, Errors & Modules', emoji:'📁', questions:[
+    {q:'What is the safest way to open a file in Python?', opts:['open(file)','file.open()','with open(file) as f:','import file'], ans:2, exp:'The with statement automatically closes the file when done, even if an error occurs.'},
+    {q:'Which keyword starts error handling in Python?', opts:['catch','handle','try','error'], ans:2, exp:'try/except handles errors. try: contains the risky code; except: runs if an error occurs.'},
+    {q:'How do you install a third-party package?', opts:['python install pkg','import pkg','pip install pkg','get pkg'], ans:2, exp:'pip is Python package manager. pip install requests downloads the requests library.'},
+    {q:'What does self refer to inside a class method?', opts:['The class itself','The current instance','The parent class','The module'], ans:1, exp:'self refers to the specific object calling the method. It lets methods access the object own data.'},
+  ]},
+  { mod:5, title:'Real-World Python', emoji:'🌐', questions:[
+    {q:'Which library is used to make HTTP requests in Python?', opts:['urllib2','httplib','requests','fetch'], ans:2, exp:'requests is the most popular library for HTTP calls. requests.get(url) fetches a URL.'},
+    {q:'What does response.json() do?', opts:['Saves JSON to a file','Converts JSON text to a Python dict','Validates JSON format','Sends JSON to a server'], ans:1, exp:'response.json() parses the JSON response body and returns it as a Python dictionary.'},
+    {q:'Which library is best for data analysis in Python?', opts:['NumPy','Matplotlib','Pandas','SciPy'], ans:2, exp:'Pandas is the go-to for data analysis — load CSVs, filter rows, group data, and calculate stats.'},
+    {q:'What does BeautifulSoup do?', opts:['Creates web servers','Parses HTML for web scraping','Sends HTTP requests','Manages databases'], ans:1, exp:'BeautifulSoup parses HTML, letting you find and extract specific elements from web pages.'},
+  ]},
+  { mod:6, title:'Projects & Next Steps', emoji:'🚀', questions:[
+    {q:'Which Python framework is best for building small web apps?', opts:['Pandas','NumPy','Flask','Pygame'], ans:2, exp:'Flask is a lightweight web framework perfect for building web apps and APIs.'},
+    {q:'What is the safest way to get a value from a dictionary?', opts:['dict[key]','dict.find(key)','dict.get(key, default)','dict.fetch(key)'], ans:2, exp:'.get(key, default) returns the default value instead of raising a KeyError if the key does not exist.'},
+    {q:'Which file format does json.dump() write?', opts:['CSV','XML','JSON','YAML'], ans:2, exp:'json.dump() writes Python data to a JSON file. json.load() reads it back.'},
+    {q:'What does pip freeze do?', opts:['Stops Python','Lists all installed packages','Clears the cache','Upgrades all packages'], ans:1, exp:'pip freeze outputs all installed packages and their versions — useful for requirements.txt.'},
+  ]},
+];
+
+// ======= MODULE QUIZ STATE =======
+var mqActive = null;
+
+function buildModQuizGrid(){
+  var grid = document.getElementById('modQuizGrid');
+  if(!grid) return;
+  grid.innerHTML = MOD_QUIZZES.map(function(mq, i){
+    var saved = state.quizScores['mod'+i];
+    var scoreTxt, scoreClass, btnClass, btnTxt;
+    if(saved === undefined){
+      scoreTxt = 'Not taken yet'; scoreClass = 'none'; btnClass = ''; btnTxt = 'Take Quiz';
+    } else if(saved >= 3){
+      scoreTxt = saved+'/4 — Passed'; scoreClass = 'pass'; btnClass = 'done'; btnTxt = 'Retake Quiz';
+    } else {
+      scoreTxt = saved+'/4 — Try Again'; scoreClass = 'fail'; btnClass = ''; btnTxt = 'Try Again';
+    }
+    return '<div class="mod-quiz-card">'
+      +'<div class="mqc-header"><div class="mqc-icon">'+mq.emoji+'</div>'
+      +'<div><div class="mqc-title">Module '+mq.mod+': '+mq.title+'</div>'
+      +'<div class="mqc-meta">4 questions &middot; Pass: 3/4</div></div></div>'
+      +'<div class="mqc-score '+scoreClass+'">'+scoreTxt+'</div>'
+      +'<button class="mqc-btn '+btnClass+'" onclick="openMQ('+i+')">'+btnTxt+'</button>'
+      +'</div>';
+  }).join('');
+}
+
+function openMQ(modIdx){
+  mqActive = {modIdx:modIdx, qIdx:0, score:0, answered:false};
+  var mq = MOD_QUIZZES[modIdx];
+  document.getElementById('mqModLabel').textContent = 'Module ' + mq.mod;
+  document.getElementById('mqPanelTitle').textContent = mq.title + ' Quiz';
+  document.getElementById('mqResult').style.display = 'none';
+  document.getElementById('mqResult').classList.remove('show');
+  document.getElementById('mqBodyWrap').style.display = '';
+  document.getElementById('mqOverlay').classList.add('open');
+  renderMQ();
+}
+
+function renderMQ(){
+  var mq = MOD_QUIZZES[mqActive.modIdx];
+  var q = mq.questions[mqActive.qIdx];
+  mqActive.answered = false;
+  document.getElementById('mqQ').textContent = q.q;
+  document.getElementById('mqProg').textContent = 'Q '+(mqActive.qIdx+1)+' of '+mq.questions.length;
+  document.getElementById('mqNextBtn').style.display = 'none';
+  document.getElementById('mqFeedback').className = 'mq-feedback';
+  document.getElementById('mqFeedback').textContent = '';
+  document.getElementById('mqOpts').innerHTML = q.opts.map(function(o,i){
+    return '<button class="mq-opt" onclick="answerMQ('+i+')">'+o+'</button>';
+  }).join('');
+}
+
+function answerMQ(i){
+  if(mqActive.answered) return;
+  mqActive.answered = true;
+  var mq = MOD_QUIZZES[mqActive.modIdx];
+  var q = mq.questions[mqActive.qIdx];
+  var opts = document.querySelectorAll('.mq-opt');
+  opts.forEach(function(o,idx){
+    if(idx===q.ans) o.classList.add('correct');
+    else if(idx===i) o.classList.add('wrong');
+  });
+  if(i===q.ans) mqActive.score++;
+  var fb = document.getElementById('mqFeedback');
+  if(i===q.ans){ fb.className='mq-feedback show ok'; fb.textContent='Correct! '+q.exp; }
+  else { fb.className='mq-feedback show bad'; fb.textContent='Not quite. '+q.exp; }
+  document.getElementById('mqNextBtn').style.display = 'inline-block';
+}
+
+function mqNext(){
+  var mq = MOD_QUIZZES[mqActive.modIdx];
+  mqActive.qIdx++;
+  if(mqActive.qIdx >= mq.questions.length){
+    state.quizScores['mod'+mqActive.modIdx] = mqActive.score;
+    saveState();
+    buildModQuizGrid();
+    var allPassed = MOD_QUIZZES.every(function(_,i){ return (state.quizScores['mod'+i]||0) >= 3; });
+    document.getElementById('mqBodyWrap').style.display = 'none';
+    var res = document.getElementById('mqResult');
+    res.style.display = 'block';
+    res.classList.add('show');
+    var pct = Math.round(mqActive.score/mq.questions.length*100);
+    document.getElementById('mqrStars').textContent = pct===100?'★★★★':pct>=75?'★★★☆':'★★☆☆';
+    document.getElementById('mqrScore').textContent = mqActive.score+'/'+mq.questions.length+' — '+pct+'%';
+    document.getElementById('mqrMsg').textContent = mqActive.score >= 3
+      ? 'Passed! Great work on Module '+mq.mod+'.'
+      : 'Not quite — review the lessons and try again. You need 3/4 to pass.';
+    if(allPassed){
+      setTimeout(function(){ closeMQ(); document.getElementById('certOverlay').classList.add('open'); }, 1200);
+    }
+  } else {
+    renderMQ();
+  }
+}
+
+function mqRetry(){
+  document.getElementById('mqResult').style.display='none';
+  document.getElementById('mqResult').classList.remove('show');
+  document.getElementById('mqBodyWrap').style.display='';
+  mqActive.qIdx=0; mqActive.score=0; mqActive.answered=false;
+  renderMQ();
+}
+
+function closeMQ(){ document.getElementById('mqOverlay').classList.remove('open'); }
+
+// ======= CERTIFICATE NAME =======
+function updateCertName(val){
+  var display = document.getElementById('certNameDisplay');
+  var input = document.getElementById('certNameInput');
+  if(val && val.trim()){
+    display.textContent = val.trim();
+    display.style.display = 'block';
+    input.style.display = 'none';
+  } else {
+    display.style.display = 'none';
+    input.style.display = 'block';
+  }
+}
+
+function printCert(){
+  var input = document.getElementById('certNameInput');
+  var display = document.getElementById('certNameDisplay');
+  if(!display.style.display || display.style.display === 'none'){
+    display.textContent = (input && input.value) ? input.value : 'Python Learner';
+    display.style.display = 'block';
+    if(input) input.style.display = 'none';
+  }
+  window.print();
+}
+
+// Wire up name input
+var certInput = document.getElementById('certNameInput');
+if(certInput){ certInput.addEventListener('input', function(){ updateCertName(this.value); }); }
+
+// Set cert date
+var certDateEl = document.getElementById('certDate');
+if(certDateEl){ certDateEl.textContent = new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}); }
+
+// Build module quizzes
+buildModQuizGrid();
+
+</script>
+
+<!-- MODULE QUIZ MODAL -->
+<div class="mq-overlay" id="mqOverlay">
+  <div class="mq-panel">
+    <div class="mq-head">
+      <div>
+        <div class="mq-mod-label" id="mqModLabel"></div>
+        <div class="mq-title" id="mqPanelTitle"></div>
+      </div>
+      <button class="mq-close" onclick="closeMQ()">&#x2715;</button>
+    </div>
+    <div id="mqBodyWrap">
+      <div class="mq-body">
+        <div class="mq-q" id="mqQ"></div>
+        <div class="mq-opts" id="mqOpts"></div>
+        <div class="mq-feedback" id="mqFeedback"></div>
+      </div>
+      <div class="mq-nav">
+        <span class="mq-prog" id="mqProg"></span>
+        <button class="mq-btn" id="mqNextBtn" onclick="mqNext()" style="display:none">Next &rarr;</button>
+      </div>
+    </div>
+    <div class="mq-result" id="mqResult">
+      <div class="mqr-stars" id="mqrStars"></div>
+      <div class="mqr-score" id="mqrScore"></div>
+      <div class="mqr-msg" id="mqrMsg"></div>
+      <button class="mqr-retry" onclick="mqRetry()">&#x1F504; Retry</button>
+      <button class="mqr-close" onclick="closeMQ()">&#x2713; Done</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
